@@ -118,9 +118,7 @@ int main() {
             double l_sort = duration_cast<duration<double>>(u3 - u2).count();
 
             auto u4 = high_resolution_clock::now();
-            // Spausdinti expects a Container; we can pass list as well
             Spausdinti(l_vargsiukai, "vargsiukai_temp_list.txt");
-            // if needed write kietiakai back to file with different name
             Spausdinti(l, "kietiakai_temp_list.txt");
             auto u5 = high_resolution_clock::now();
             double l_out = duration_cast<duration<double>>(u5 - u4).count();
