@@ -16,28 +16,25 @@ vector<Studentas> Stud_from_file(const string& fname) {
         return grupe;
     }
     string eilute;
-    getline(fd, eilute);
+    getline(fd, eilute); // praleidžiame header eilutę
     while (getline(fd, eilute)) {
         if (eilute.empty()) continue;
         istringstream iss(eilute);
         Studentas st;
-        iss >> st.var >> st.pav;
+        string vard, pav;
+        iss >> vard >> pav;
+        if (!iss) continue;
         vector<int> laik;
         int val;
         while (iss >> val) laik.push_back(val);
         if (laik.size() < 2) continue;
-        st.egz = laik.back();
+        st.setVar(vard);
+        st.setPav(pav);
+        st.setEgz(laik.back());
         laik.pop_back();
-        st.paz = laik;
-        int sum = 0;
-        for (int x : st.paz) sum += x;
-        double vid = double(sum) / st.paz.size();
-        st.galVid = vid * 0.4 + st.egz * 0.6;
-        sort(st.paz.begin(), st.paz.end());
-        double med = (st.paz.size() % 2 == 0)
-            ? (st.paz[st.paz.size() / 2 - 1] + st.paz[st.paz.size() / 2]) / 2.0
-            : st.paz[st.paz.size() / 2];
-        st.galMed = med * 0.4 + st.egz * 0.6;
+        st.setPaz(laik);
+        // compute galutiniai per klasės metodą
+        st.computeGalutiniai();
         grupe.push_back(st);
     }
     return grupe;

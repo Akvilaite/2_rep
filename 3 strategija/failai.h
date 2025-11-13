@@ -20,10 +20,9 @@ void Spausdinti(const Container& Grupe, const string& out_file) {
         << right << setw(20) << "Galutinis (Med.)" << '\n';
     fout << string(75, '-') << '\n';
     for (const auto& st : Grupe) {
-        fout << left << setw(15) << st.var
-            << left << setw(20) << st.pav
-            << right << setw(20) << fixed << setprecision(2) << st.galVid
-            << right << setw(20) << fixed << setprecision(2) << st.galMed << '\n';
+        fout << left << setw(15) << st.var()
+            << left << setw(20) << st.pav()
+            << right << setw(20) << fixed << setprecision(2) << st.galVid()
+            << right << setw(20) << fixed << setprecision(2) << st.galMed() << '\n';
     }
 }
-
