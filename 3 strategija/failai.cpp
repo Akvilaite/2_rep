@@ -16,7 +16,7 @@ vector<Studentas> Stud_from_file(const string& fname) {
         return grupe;
     }
     string eilute;
-    getline(fd, eilute); // praleidžiame header eilutę
+    getline(fd, eilute); 
     while (getline(fd, eilute)) {
         if (eilute.empty()) continue;
         istringstream iss(eilute);
