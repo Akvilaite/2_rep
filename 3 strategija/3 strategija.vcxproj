@@ -127,6 +127,7 @@
     <ClCompile Include="3 strategija.cpp" />
     <ClCompile Include="failai.cpp" />
     <ClCompile Include="studentas.cpp" />
+    <ClCompile Include="testavimas.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="failai.h" />
