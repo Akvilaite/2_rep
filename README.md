@@ -49,6 +49,7 @@ didelio pokyčio tarp class ir stuct nepastebėjau darant 3 bandymus
 
 
 # Pirmas_lab_2
+   </pre>
 su struct:
 Su 100 000:         
 Failo nuskaitymas        1.04658      
@@ -82,6 +83,7 @@ Bendras laikas             11.57822
 
 # su optimizavimu
 O1:
+</pre>
 su 1 000 000:
 ===== LAIKO MATAVIMAI =====
 Failo nuskaitymo laikas: 6.0704 s
@@ -99,10 +101,11 @@ Rezultatu isvedimo i faila laikas: 1.82292 s
 ---------------------------------
 Bendras programos veikimo laikas: 8.29699 s
 ===========================
-
+</pre>
 
 02(jau naudojau anksciau):su class:
-   Vektoriai:
+</pre>
+Vektoriai:
 Su 100 000:
 ===== LAIKO MATAVIMAI =====
 Failo nuskaitymo laikas: 0.605872 s
@@ -121,8 +124,9 @@ Rezultatu isvedimo i faila laikas: 1.62353 s
 ---------------------------------
 Bendras programos veikimo laikas: 7.69698 s
 ===========================
+</pre>
 O3:
-
+</pre>
 Vektoriai:
 
 Su 100000:
@@ -142,3 +146,4 @@ Rezultatu isvedimo i faila laikas: 1.69641 s
 ---------------------------------
 Bendras programos veikimo laikas: 7.73329 s
 ===========================
+</pre>
