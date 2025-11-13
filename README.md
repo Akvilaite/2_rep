@@ -44,120 +44,101 @@ išves rezultatus ekrane ir į failus.
   
 <pre>  
 Bendros įžvalgos
-2strategija buvo greitesnė už 1.
-Su mažais duomenų kiekiais (1000 eilučių) greičiau veikė list konteineris.
-
-Su labai dideliais duomenų kiekiais (10 000 000 eilučių) efektyvesnis buvo vector konteineris.
-
-Tai rodo, kad konteinerio pasirinkimas priklauso nuo duomenų masto: list pranašesnis mažesnėse apimtose, vector – didelėse.
+didelio pokyčio tarp class ir stuct nepastebėjau darant 3 bandymus
+   O2 ir O3 už O1 greitesnės net 10 kartų. greičiaucia O2   
 
 
 # Pirmas_lab_2
+su struct:
+Su 100 000:         
+Failo nuskaitymas        1.04658      
+Rūšiavimas ir skirstymas 0.02732      
+Rezultatų išvedimas      0.31476    
+Bendras laikas           1.38866     
 
-## 1 strategija
+Su 1 000 000:                            
+Failo nuskaitymas        7.39874           
+Rūšiavimas ir skirstymas 0.09767         
+Rezultatų išvedimas      2.12998       
+Bendras laikas           9.62639                  
 
-<pre>
-Vektoriai:                                List'ai:
-Su 1000:                                  Su 1000:
-Failo nuskaitymas     0.01135             Failo nuskaitymas     0.00804
-Rūšiavimas ir skirstymas  1.85156         Rūšiavimas ir skirstymas  1.56665
-Rezultatų išvedimas   0.09685             Rezultatų išvedimas   0.01833
-Bendras laikas        1.95977             Bendras laikas        1.59302
+su class:
+   Vektoriai:
+Su 100 000:
+Failo nuskaitymas           0.92756
+R?Üiavimas ir skirstymas    0.02367
+Rezultat? iÜvedimas         0.31816
+Bendras laikas              1.26939
+   
 
-Su 10 000:                                Su 10 000:
-Failo nuskaitymas     0.09059             Failo nuskaitymas     0.08155
-Rūšiavimas ir skirstymas  1.36175         Rūšiavimas ir skirstymas  2.37754
-Rezultatų išvedimas   0.06081             Rezultatų išvedimas   0.04845
-Bendras laikas        1.51315             Bendras laikas        2.50754
+Su 1000000:
+Failo nuskaitymas           8.43623
+R?Üiavimas ir skirstymas    0.21206
+Rezultat? iÜvedimas         2.92994
+Bendras laikas             11.57822
 
-Su 100 000:                               Su 100 000:
-Failo nuskaitymas     0.74772             Failo nuskaitymas     0.74102
-Rūšiavimas ir skirstymas  2.21302         Rūšiavimas ir skirstymas  2.19679
-Rezultatų išvedimas   0.25155             Rezultatų išvedimas   0.22546
-Bendras laikas        3.21230             Bendras laikas        3.16326
-
-Su 1 000 000:                             Su 1 000 000:
-Failo nuskaitymas     7.41286             Failo nuskaitymas     7.34436
-Rūšiavimas ir skirstymas  5.78897         Rūšiavimas ir skirstymas  7.85784
-Rezultatų išvedimas   2.10004             Rezultatų išvedimas   2.06584
-Bendras laikas        15.3019             Bendras laikas        17.268
-
-Su 10 000 000:                            Su 10 000 000:
-Failo nuskaitymas     74.8043             Failo nuskaitymas     76.347
-Rūšiavimas ir skirstymas  18.0287         Rūšiavimas ir skirstymas  22.384
-Rezultatų išvedimas   21.3821             Rezultatų išvedimas   21.331
-Bendras laikas        114.215             Bendras laikas        120.063
 </pre>
 
 
-## 2 strategija
+# su optimizavimu
+O1:
+su 1 000 000:
+===== LAIKO MATAVIMAI =====
+Failo nuskaitymo laikas: 6.0704 s
+Skirstymo i vargsiukus laikas: 0.0661496 s
+Rezultatu isvedimo i faila laikas: 1.70911 s
+---------------------------------
+Bendras programos veikimo laikas: 7.84566 s
+===========================
 
-<pre>
-Vektoriai:                                List'ai:
-Su 1000:                                  Su 1000:
-Failo nuskaitymas     0.00970             Failo nuskaitymas     0.00744
-Skirstymas            0.00014             Skirstymas            0.00009
-Rezultatų išvedimas   0.02020             Rezultatų išvedimas   0.01946
-Bendras laikas        0.03701             Bendras laikas        0.02765
-
-Su 10 000:                                Su 10 000:
-Failo nuskaitymas     0.06628             Failo nuskaitymas     0.07150
-Skirstymas            0.00151             Skirstymas            0.00096
-Rezultatų išvedimas   0.03266             Rezultatų išvedimas   0.03075
-Bendras laikas        0.09979             Bendras laikas        0.10321
-
-Su 100 000:                               Su 100 000:
-Failo nuskaitymas     0.77957             Failo nuskaitymas     0.77369
-Skirstymas            0.01949             Skirstymas            0.02137
-Rezultatų išvedimas   0.27716             Rezultatų išvedimas   0.34920
-Bendras laikas        1.08288             Bendras laikas        1.15406
-
-Su 1 000 000:                             Su 1 000 000:
-Failo nuskaitymas     7.75270             Failo nuskaitymas     6.69168
-Skirstymas            0.20482             Skirstymas            0.23783
-Rezultatų išvedimas   2.41117             Rezultatų išvedimas   2.37864
-Bendras laikas        10.3694             Bendras laikas        9.1026
-
-Su 10 000 000:                            Su 10 000 000:
-Failo nuskaitymas     66.0902             Failo nuskaitymas     60.8914
-Skirstymas            2.1401              Skirstymas            2.5079
-Rezultatų išvedimas   17.9058             Rezultatų išvedimas   18.0184
-Bendras laikas        86.1361             Bendras laikas        81.4177
-</pre>
+su 100 000:
+===== LAIKO MATAVIMAI =====
+Failo nuskaitymo laikas: 6.40266 s
+Skirstymo i vargsiukus laikas: 0.0714069 s
+Rezultatu isvedimo i faila laikas: 1.82292 s
+---------------------------------
+Bendras programos veikimo laikas: 8.29699 s
+===========================
 
 
-# 3 strategija
+02(jau naudojau anksciau):su class:
+   Vektoriai:
+Su 100 000:
+===== LAIKO MATAVIMAI =====
+Failo nuskaitymo laikas: 0.605872 s
+Skirstymo i vargsiukus laikas: 0.0088592 s
+Rezultatu isvedimo i faila laikas: 0.177838 s
+---------------------------------
+Bendras programos veikimo laikas: 0.792569 s
+===========================
 
-<pre>
-Vektoriai:                                   List'ai:
-Su 1000:                                     Su 1000:
-Failo nuskaitymas        0.01190             Failo nuskaitymas        0.01426
-Rūšiavimas ir skirstymas 0.00024             Rūšiavimas ir skirstymas 0.00013
-Rezultatų išvedimas      0.02664             Rezultatų išvedimas      0.01612
-Bendras laikas           0.03878             Bendras laikas           0.03051
+Su 1000000:
 
-Su 10 000:                                   Su 10 000:
-Failo nuskaitymas        0.10644             Failo nuskaitymas        0.10793
-Rūšiavimas ir skirstymas 0.00242             Rūšiavimas ir skirstymas 0.00165
-Rezultatų išvedimas      0.04277             Rezultatų išvedimas      0.04761
-Bendras laikas           0.15163             Bendras laikas           0.15719
+===== LAIKO MATAVIMAI =====
+Failo nuskaitymo laikas: 5.99331 s
+Skirstymo i vargsiukus laikas: 0.0801343 s
+Rezultatu isvedimo i faila laikas: 1.62353 s
+---------------------------------
+Bendras programos veikimo laikas: 7.69698 s
+===========================
+O3:
 
-Su 100 000:                                  Su 100 000:
-Failo nuskaitymas        1.04658             Failo nuskaitymas        1.04903
-Rūšiavimas ir skirstymas 0.02732             Rūšiavimas ir skirstymas 0.02918
-Rezultatų išvedimas      0.31476             Rezultatų išvedimas      0.35502
-Bendras laikas           1.38866             Bendras laikas           1.43324
+Vektoriai:
 
-Su 1 000 000:                                Su 1 000 000:
-Failo nuskaitymas        7.39874             Failo nuskaitymas        7.33834
-Rūšiavimas ir skirstymas 0.09767             Rūšiavimas ir skirstymas 0.26995
-Rezultatų išvedimas      2.12998             Rezultatų išvedimas      2.30696
-Bendras laikas           9.62639             Bendras laikas           9.91524
+Su 100000:
+===== LAIKO MATAVIMAI =====
+Failo nuskaitymo laikas: 0.602839 s
+Skirstymo i vargsiukus laikas: 0.006805 s
+Rezultatu isvedimo i faila laikas: 0.190798 s
+---------------------------------
+Bendras programos veikimo laikas: 0.800441 s
+===========================
+Su 1 000 000:
 
-Su 10 000 000:                               Su 10 000 000:
-Failo nuskaitymas        63.8519             Failo nuskaitymas        64.7622
-Rūšiavimas ir skirstymas 1.10497             Rūšiavimas ir skirstymas 1.98137
-Rezultatų išvedimas      16.3334             Rezultatų išvedimas      15.6772
-Bendras laikas           81.2903             Bendras laikas           82.4207
-</pre>
-
+===== LAIKO MATAVIMAI =====
+Failo nuskaitymo laikas: 5.96122 s
+Skirstymo i vargsiukus laikas: 0.0756703 s
+Rezultatu isvedimo i faila laikas: 1.69641 s
+---------------------------------
+Bendras programos veikimo laikas: 7.73329 s
+===========================
