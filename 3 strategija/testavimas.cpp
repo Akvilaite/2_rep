@@ -15,9 +15,7 @@
 using namespace std;
 using namespace std::chrono;
 
-// --------------------
-// GENERAVIMAS (vieną kartą)
-// --------------------
+
 static void GenerateTestFile(const string& filename, int n) {
     ofstream fout(filename);
     if (!fout) return;
@@ -70,7 +68,7 @@ int main() {
     for (int size : sizes) {
         string filename = "stud" + to_string(size) + ".txt";
 
-        // Failas generuojamas tik vieną kartą
+    
         GenerateTestFile(filename, size);
 
         double v_file_sum = 0, v_sort_sum = 0;
@@ -81,7 +79,7 @@ int main() {
 
         for (int r = 0; r < runs; ++r) {
 
-            // -------- VECTORS --------
+       
             auto t0 = high_resolution_clock::now();
             vector<Studentas> v = Stud_from_file(filename);
             auto t1 = high_resolution_clock::now();
@@ -98,7 +96,7 @@ int main() {
             auto t3 = high_resolution_clock::now();
             v_sort_sum += duration<double>(t3 - t2).count();
 
-            if (r == runs - 1) {  // tik paskutinį run išvedimui
+            if (r == runs - 1) { 
                 last_v = v;
                 last_v_args = v_args;
             }
