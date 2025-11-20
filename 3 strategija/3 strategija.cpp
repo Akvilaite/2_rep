@@ -12,6 +12,7 @@ using namespace std;
 using namespace std::chrono;
 
 int main() {
+
     ios::sync_with_stdio(false);
     srand(static_cast<unsigned int>(time(nullptr)));
 
@@ -86,6 +87,8 @@ int main() {
         return 0;
     }
 
+
+
     int kriterijus;
     cout << "\nPasirinkite kriteriju studentu dalinimui:\n";
     cout << "1 - Pagal vidurki\n";
@@ -141,6 +144,25 @@ int main() {
     }
 
     double bendrasLaikas = failoLaikas + rusiavimoLaikas + isvedimoLaikas;
+
+    cout << "\n=== Rule of Three demonstracija su tavo studentais ===\n";
+
+    if (konteinerisTipas == 1 && !vGrupe.empty()) {
+        Studentas original = vGrupe[0];     
+        Studentas kopija(original);        
+        Studentas priskirtas;
+        priskirtas = original;            
+    }
+    else if (konteinerisTipas == 2 && !lGrupe.empty()) {
+        Studentas original = lGrupe.front();
+        Studentas kopija(original);       
+        Studentas priskirtas;
+        priskirtas = original;        
+    }
+
+    cout << "=== Demonstracija baigta ===\n";
+
+
 
     cout << "\n===== LAIKO MATAVIMAI =====\n";
     cout << "Failo nuskaitymo laikas: " << failoLaikas << " s\n";

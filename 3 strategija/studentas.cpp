@@ -6,6 +6,9 @@
 
 using namespace std;
 
+// ======================
+// Galutinio rezultato skaiciavimas
+// ======================
 void Studentas::computeGalutiniai() {
     if (paz_.empty()) {
         galVid_ = egz_;
@@ -13,11 +16,13 @@ void Studentas::computeGalutiniai() {
         return;
     }
 
+    // --- Vidurkis ---
     double suma = 0.0;
     for (int x : paz_) suma += x;
     double vid = suma / paz_.size();
     galVid_ = vid * 0.4 + egz_ * 0.6;
 
+    // --- Mediana ---
     vector<int> tmp = paz_;
     sort(tmp.begin(), tmp.end());
 
@@ -32,6 +37,10 @@ void Studentas::computeGalutiniai() {
     galMed_ = med * 0.4 + egz_ * 0.6;
 }
 
+// ==========================
+// Studentų nuskaitymas (>>)
+// Formatas: Vardas Pavarde Paz1 Paz2 ... Egz
+// ==========================
 std::istream& Studentas::readStudent(std::istream& is) {
     is >> var_ >> pav_;
     paz_.clear();
@@ -39,6 +48,7 @@ std::istream& Studentas::readStudent(std::istream& is) {
     string token;
     vector<int> numbers;
 
+    // Skaitome visus likusius skaičius (paz ir egz)
     while (is >> token) {
         try {
             int x = stoi(token);
@@ -78,10 +88,14 @@ std::ostream& operator<<(std::ostream& os, const Studentas& s) {
     return os;
 }
 
+// ===============================
+// Stud_iv — rankiniam įvedimui / generavimui
+// ===============================
 Studentas Stud_iv(int budas) {
     Studentas st;
 
     if (budas == 1) {
+        // Žinomas pažymių kiekis
         cout << "Iveskite varda: ";
         string v; cin >> v;
         cout << "Iveskite pavarde: ";
@@ -109,6 +123,7 @@ Studentas Stud_iv(int budas) {
         st.computeGalutiniai();
     }
     else if (budas == 2) {
+        // Nezinomas pazymiu kiekis (ENTER x2)
         cout << "Iveskite varda: ";
         string v; cin >> v;
         cout << "Iveskite pavarde: ";
@@ -121,7 +136,7 @@ Studentas Stud_iv(int budas) {
 
         vector<int> paz;
         string line;
-        getline(cin, line); 
+        getline(cin, line); // gaudo \n
 
         while (true) {
             getline(cin, line);
@@ -142,26 +157,30 @@ Studentas Stud_iv(int budas) {
         st.computeGalutiniai();
     }
     else if (budas == 3) {
-        st.setVar("Vardas" + to_string(rand() % 1000));
-        st.setPav("Pavarde" + to_string(rand() % 1000));
+        cout << "Iveskite varda: ";
+        string v; cin >> v;
+        cout << "Iveskite pavarde: ";
+        string p; cin >> p;
 
-        int k = rand() % 7 + 3; // 3–10 ND
+        st.setVar(v);
+        st.setPav(p);
+
+        int k;
+        cout << "Kiek pazymiu norite sugeneruoti: ";
+        cin >> k;
+
         vector<int> paz(k);
         for (int i = 0; i < k; i++)
-            paz[i] = rand() % 10 + 1;
+            paz[i] = rand() % 10 + 1; 
 
         st.setPaz(paz);
-        st.setEgz(rand() % 10 + 1);
+
+        int egz = rand() % 10 + 1;
+        st.setEgz(egz);
 
         st.computeGalutiniai();
     }
-    else {
-        st.setVar("Vardas");
-        st.setPav("Pavarde");
-        st.setPaz({ 1,1,1 });
-        st.setEgz(1);
-        st.computeGalutiniai();
-    }
+
 
     return st;
 }
