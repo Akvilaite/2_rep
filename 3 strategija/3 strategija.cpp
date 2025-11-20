@@ -16,8 +16,8 @@ int main() {
     srand(static_cast<unsigned int>(time(nullptr)));
 
     cout << "Pasirinkite konteinerio tipa:\n";
-    cout << "1 - std::vector\n";
-    cout << "2 - std::list\n";
+    cout << "1 - vector\n";
+    cout << "2 - list\n";
     int konteinerisTipas;
     while (!(cin >> konteinerisTipas) || (konteinerisTipas != 1 && konteinerisTipas != 2)) {
         cout << "Neteisingas pasirinkimas. Bandykite dar karta: ";
@@ -98,9 +98,10 @@ int main() {
 
     int strategija;
     cout << "\nPasirinkite strategija:\n";
+	cout << "1 - Pirma strategija \n";
     cout << "2 - Klasikine versija (erase/remove)\n";
     cout << "3 - Optimizuota versija (partition/splice)\n";
-    while (!(cin >> strategija) || (strategija != 2 && strategija != 3)) {
+    while (!(cin >> strategija) || (strategija != 2 && strategija != 3 && strategija != 1)) {
         cout << "Neteisingas pasirinkimas. Bandykite dar karta: ";
         cin.clear();
         cin.ignore(10000, '\n');

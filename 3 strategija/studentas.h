@@ -15,6 +15,7 @@ private:
 public:
     Studentas() = default;
     Studentas(std::istream& is) { readStudent(is); }
+    ~Studentas() { var_.clear(); pav_.clear(); paz_.clear(); egz_ = 0; }
 
     inline std::string var() const { return var_; }
     inline std::string pav() const { return pav_; }

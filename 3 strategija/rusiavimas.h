@@ -52,6 +52,7 @@ void Rikiuoti(Container& Grupe) {
         Grupe.sort(comp);
 }
 
+
 template <typename Container>
 void Strategija2(Container& studentai, Container& vargsiukai, int kriterijus) {
     if constexpr (is_same<Container, vector<Studentas>>::value) {
@@ -103,5 +104,23 @@ void Strategija3(Container& studentai, Container& vargsiukai, int kriterijus) {
             }
             else ++it;
         }
+    }
+}
+
+template <typename Container>
+void Strategija1(const Container& studentai,
+    Container& vargsiukai,
+    Container& kietiakai,
+    int kriterijus)
+{
+    vargsiukai.clear();
+    kietiakai.clear();
+
+    for (const auto& st : studentai) {
+        double val = (kriterijus == 1 ? st.galVid() : st.galMed());
+        if (val < 5.0)
+            vargsiukai.push_back(st);
+        else
+            kietiakai.push_back(st);
     }
 }
