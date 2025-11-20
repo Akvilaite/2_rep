@@ -82,19 +82,19 @@ Pasirinkite veiksmą:
 
 | Testas | Rezultatas | Pastabos |
 |--------|-----------|----------|
-| `cin >> studentas` | ✅ Veikia | Nuskaito vardą, pavardę, pažymius |
-| `cout << studentas` | ✅ Veikia | Išveda formatuotą informaciją |
-| `ifstream >> studentas` | ✅ Veikia | Skaito iš failo |
-| `ofstream << studentas` | ✅ Veikia | Rašo į failą |
+| `cin >> studentas` | Veikia | Nuskaito vardą, pavardę, pažymius |
+| `cout << studentas` | Veikia | Išveda formatuotą informaciją |
+| `ifstream >> studentas` | Veikia | Skaito iš failo |
+| `ofstream << studentas` | Veikia | Rašo į failą |
 
 ### Rule of Three testavimas
 
 | Metodas | Testas | Rezultatas |
 |---------|--------|-----------|
-| Destruktorius | Objekto sunaikinimas | ✅ Atmintis atlaisvinama |
-| Copy konstruktorius | `Studentas s2(s1)` | ✅ Sukuria identiška kopija |
-| Assignment | `s1 = s2` | ✅ Priskiria reikšmes teisingai |
-| Self-assignment | `s1 = s1` | ✅ Apsauga veikia |
+| Destruktorius | Objekto sunaikinimas | Atmintis atlaisvinama |
+| Copy konstruktorius | `Studentas s2(s1)` | Sukuria identiška kopija |
+| Assignment | `s1 = s2` | Priskiria reikšmes teisingai |
+| Self-assignment | `s1 = s1` | Apsauga veikia |
 
 ---
 
