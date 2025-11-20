@@ -11,13 +11,13 @@ void Studentas::computeGalutiniai() {
         return;
     }
 
- 
+
     double sum = 0.0;
     for (int x : paz_) sum += x;
     double vid = sum / paz_.size();
     galVid_ = vid * 0.4 + egz_ * 0.6;
 
-   
+    // mediana
     vector<int> tmp = paz_;
     sort(tmp.begin(), tmp.end());
     double med = 0.0;

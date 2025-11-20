@@ -13,38 +13,9 @@ private:
     double galMed_{ 0.0 };
 
 public:
- 
     Studentas() = default;
+    Studentas(std::istream& is) { readStudent(is); }
 
-   
-    Studentas(const std::string& v, const std::string& p,
-        const std::vector<int>& pa, int e)
-        : var_(v), pav_(p), paz_(pa), egz_(e)
-    {
-        computeGalutiniai();
-    }
-
-   
-    explicit Studentas(std::istream& is) {
-        readStudent(is);
-    }
-
-
-    Studentas(const Studentas&) = default;
-
-   
-    Studentas(Studentas&&) noexcept = default;
-
- 
-    Studentas& operator=(const Studentas&) = default;
-
-   
-    Studentas& operator=(Studentas&&) noexcept = default;
-
-    //DESTRUKTORIUS
-    ~Studentas() = default;
-
-  
     inline std::string var() const { return var_; }
     inline std::string pav() const { return pav_; }
     inline const std::vector<int>& paz() const { return paz_; }
@@ -52,7 +23,6 @@ public:
     inline double galVid() const { return galVid_; }
     inline double galMed() const { return galMed_; }
 
-   
     inline void setVar(const std::string& v) { var_ = v; }
     inline void setPav(const std::string& p) { pav_ = p; }
     inline void setPaz(const std::vector<int>& p) { paz_ = p; }
@@ -63,3 +33,7 @@ public:
     void computeGalutiniai();
     std::istream& readStudent(std::istream& is);
 };
+
+
+Studentas Stud_iv(int budas);
+

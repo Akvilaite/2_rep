@@ -16,7 +16,7 @@ vector<Studentas> Stud_from_file(const string& fname) {
         return grupe;
     }
     string eilute;
-    getline(fd, eilute); 
+    getline(fd, eilute);
     while (getline(fd, eilute)) {
         if (eilute.empty()) continue;
         istringstream iss(eilute);
@@ -33,7 +33,7 @@ vector<Studentas> Stud_from_file(const string& fname) {
         st.setEgz(laik.back());
         laik.pop_back();
         st.setPaz(laik);
-       
+        // compute galutiniai per klasės metodą
         st.computeGalutiniai();
         grupe.push_back(st);
     }
