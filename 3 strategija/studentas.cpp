@@ -6,9 +6,7 @@
 
 using namespace std;
 
-// ======================
-// Galutinio rezultato skaiciavimas
-// ======================
+
 void Studentas::computeGalutiniai() {
     if (paz_.empty()) {
         galVid_ = egz_;
@@ -16,13 +14,11 @@ void Studentas::computeGalutiniai() {
         return;
     }
 
-    // --- Vidurkis ---
     double suma = 0.0;
     for (int x : paz_) suma += x;
     double vid = suma / paz_.size();
     galVid_ = vid * 0.4 + egz_ * 0.6;
 
-    // --- Mediana ---
     vector<int> tmp = paz_;
     sort(tmp.begin(), tmp.end());
 
@@ -37,10 +33,6 @@ void Studentas::computeGalutiniai() {
     galMed_ = med * 0.4 + egz_ * 0.6;
 }
 
-// ==========================
-// Studentų nuskaitymas (>>)
-// Formatas: Vardas Pavarde Paz1 Paz2 ... Egz
-// ==========================
 std::istream& Studentas::readStudent(std::istream& is) {
     is >> var_ >> pav_;
     paz_.clear();
@@ -48,7 +40,6 @@ std::istream& Studentas::readStudent(std::istream& is) {
     string token;
     vector<int> numbers;
 
-    // Skaitome visus likusius skaičius (paz ir egz)
     while (is >> token) {
         try {
             int x = stoi(token);
@@ -88,14 +79,10 @@ std::ostream& operator<<(std::ostream& os, const Studentas& s) {
     return os;
 }
 
-// ===============================
-// Stud_iv — rankiniam įvedimui / generavimui
-// ===============================
 Studentas Stud_iv(int budas) {
     Studentas st;
 
     if (budas == 1) {
-        // Žinomas pažymių kiekis
         cout << "Iveskite varda: ";
         string v; cin >> v;
         cout << "Iveskite pavarde: ";
@@ -123,7 +110,6 @@ Studentas Stud_iv(int budas) {
         st.computeGalutiniai();
     }
     else if (budas == 2) {
-        // Nezinomas pazymiu kiekis (ENTER x2)
         cout << "Iveskite varda: ";
         string v; cin >> v;
         cout << "Iveskite pavarde: ";
@@ -136,7 +122,7 @@ Studentas Stud_iv(int budas) {
 
         vector<int> paz;
         string line;
-        getline(cin, line); // gaudo \n
+        getline(cin, line);
 
         while (true) {
             getline(cin, line);
