@@ -1,4 +1,4 @@
-# v1.1 specifikacijos:
+# v1.2 specifikacijos:
 
 <pre>
 CPU Intel Core i9-12900H, 12-oji karta, 14 branduolių (6 P + 8 E), 20 gijų, 2.5 GHz bazinis dažnis, iki 5.0 GHz
@@ -40,110 +40,66 @@ atskirs „vargšiukus“,
 išves rezultatus ekrane ir į failus.
 </pre>
   
-#Vidurkiai: 
-  
-<pre>  
-Bendros įžvalgos
-didelio pokyčio tarp class ir stuct nepastebėjau darant 3 bandymus
-   O2 ir O3 už O1 greitesnės net 10 kartų. greičiaucia O2   
+
+## Aprašymas
+Programa skirta studentų pažymių tvarkymui, galutinio balo skaičiavimui ir rūšiavimui.
+
+---
+
+### Realizuoti Rule of Three metodai
+
+#### 1. Destruktorius `~Studentas()`
+**Paskirtis:** Atlaisvina resursus prieš objekto sunaikinimą.
+
+#### 2. Copy Konstruktorius `Studentas(const Studentas& other)`
+
+**Paskirtis:** Sukuria naują objektą kaip esamo kopiją.
+
+#### 3. Assignment Operatorius `operator=`
+
+**Paskirtis:** Priskiria vieno objekto reikšmes kitam.
+
+<img width="1680" height="475" alt="image" src="https://github.com/user-attachments/assets/c2d11158-544e-4d8a-97cb-9e36c152ce61" />
+<img width="1076" height="517" alt="image" src="https://github.com/user-attachments/assets/3b075075-7624-4b02-a426-c963d4e0ae58" />
 
 
-# Pirmas_lab_2
-   </pre>
-su struct:
-Su 100 000:         
-Failo nuskaitymas        1.04658      
-Rūšiavimas ir skirstymas 0.02732      
-Rezultatų išvedimas      0.31476    
-Bendras laikas           1.38866     
+## Duomenų įvesties būdai
 
-Su 1 000 000:                            
-Failo nuskaitymas        7.39874           
-Rūšiavimas ir skirstymas 0.09767         
-Rezultatų išvedimas      2.12998       
-Bendras laikas           9.62639                  
+| Būdas | Aprašymas | Kodas |
+|-------|-----------|-------|
+| **1 - Žinomas pažymių skaičius** | Vartotojas įveda visus duomenis rankiniu būdu | `cin >> studentas` |
+| **2 - Nežinomas pažymių skaičius** | Įvedimas su ENTER pabaiga | `readStudent(cin)` |
+| **3 - Generuoti pažymius** | Automatinis generavimas | `rand()` funkcijos |
+| **4 - Iš failo** | Nuskaitymas iš `.txt` failo | `ifstream >> studentas` |
 
-su class:
-   Vektoriai:
-Su 100 000:
-Failo nuskaitymas           0.92756
-R?Üiavimas ir skirstymas    0.02367
-Rezultat? iÜvedimas         0.31816
-Bendras laikas              1.26939
-   
+---
 
-Su 1000000:
-Failo nuskaitymas           8.43623
-R?Üiavimas ir skirstymas    0.21206
-Rezultat? iÜvedimas         2.92994
-Bendras laikas             11.57822
+## Duomenų išvesties būdai
 
-</pre>
+| Būdas | Aprašymas | Kodas |
+|-------|-----------|-------|
+| **Į failą** | Išsaugojimas `.txt` faile | `ofstream << studentas` |
 
 
-# su optimizavimu
-O1:
-</pre>
-su 1 000 000:
-===== LAIKO MATAVIMAI =====
-Failo nuskaitymo laikas: 6.0704 s
-Skirstymo i vargsiukus laikas: 0.0661496 s
-Rezultatu isvedimo i faila laikas: 1.70911 s
----------------------------------
-Bendras programos veikimo laikas: 7.84566 s
-===========================
+---
 
-su 100 000:
-===== LAIKO MATAVIMAI =====
-Failo nuskaitymo laikas: 6.40266 s
-Skirstymo i vargsiukus laikas: 0.0714069 s
-Rezultatu isvedimo i faila laikas: 1.82292 s
----------------------------------
-Bendras programos veikimo laikas: 8.29699 s
-===========================
-</pre>
 
-02(jau naudojau anksciau):su class:
-</pre>
-Vektoriai:
-Su 100 000:
-===== LAIKO MATAVIMAI =====
-Failo nuskaitymo laikas: 0.605872 s
-Skirstymo i vargsiukus laikas: 0.0088592 s
-Rezultatu isvedimo i faila laikas: 0.177838 s
----------------------------------
-Bendras programos veikimo laikas: 0.792569 s
-===========================
+## Testavimo rezultatai
 
-Su 1000000:
+### Įvesties/Išvesties operatorių testavimas
 
-===== LAIKO MATAVIMAI =====
-Failo nuskaitymo laikas: 5.99331 s
-Skirstymo i vargsiukus laikas: 0.0801343 s
-Rezultatu isvedimo i faila laikas: 1.62353 s
----------------------------------
-Bendras programos veikimo laikas: 7.69698 s
-===========================
-</pre>
-O3:
-</pre>
-Vektoriai:
+| Testas | Rezultatas | Pastabos |
+|--------|-----------|----------|
+| `cin >> studentas` | Veikia | Nuskaito vardą, pavardę, pažymius |
+| `cout << studentas` | Veikia | Išveda formatuotą informaciją |
+| `ifstream >> studentas` | Veikia | Skaito iš failo |
+| `ofstream << studentas` | Veikia | Rašo į failą |
 
-Su 100000:
-===== LAIKO MATAVIMAI =====
-Failo nuskaitymo laikas: 0.602839 s
-Skirstymo i vargsiukus laikas: 0.006805 s
-Rezultatu isvedimo i faila laikas: 0.190798 s
----------------------------------
-Bendras programos veikimo laikas: 0.800441 s
-===========================
-Su 1 000 000:
+### Rule of Three testavimas
 
-===== LAIKO MATAVIMAI =====
-Failo nuskaitymo laikas: 5.96122 s
-Skirstymo i vargsiukus laikas: 0.0756703 s
-Rezultatu isvedimo i faila laikas: 1.69641 s
----------------------------------
-Bendras programos veikimo laikas: 7.73329 s
-===========================
-</pre>
+| Metodas | Testas | Rezultatas |
+|---------|--------|-----------|
+| Destruktorius | Objekto sunaikinimas | Atmintis atlaisvinama |
+| Copy konstruktorius | `Studentas s2(s1)` | Sukuria identiška kopija |
+| Assignment | `s1 = s2` | Priskiria reikšmes teisingai |
+| Self-assignment | `s1 = s1` | Apsauga veikia |
