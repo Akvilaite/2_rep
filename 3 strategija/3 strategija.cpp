@@ -218,3 +218,12 @@ int main() {
 
     return 0;
 }
+
+// ========================================
+//  Abstrakčios klasės Zmogus demonstracija
+// ========================================
+
+//
+// atkomentuoti apatine eilute norint patikrinti:
+//Zmogus z;   
+
