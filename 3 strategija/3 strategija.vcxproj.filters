@@ -35,5 +35,8 @@
     <ClInclude Include="studentas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="zmogus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
