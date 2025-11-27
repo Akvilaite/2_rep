@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 void Studentas::computeGalutiniai() {
     if (paz_.empty()) {
         galVid_ = egz_;
@@ -14,11 +13,15 @@ void Studentas::computeGalutiniai() {
         return;
     }
 
+    // Vidurkis
     double suma = 0.0;
-    for (int x : paz_) suma += x;
+    for (int x : paz_)
+        suma += x;
+
     double vid = suma / paz_.size();
     galVid_ = vid * 0.4 + egz_ * 0.6;
 
+    // Mediana
     vector<int> tmp = paz_;
     sort(tmp.begin(), tmp.end());
 
@@ -35,8 +38,8 @@ void Studentas::computeGalutiniai() {
 
 std::istream& Studentas::readStudent(std::istream& is) {
     is >> var_ >> pav_;
-    paz_.clear();
 
+    paz_.clear();
     string token;
     vector<int> numbers;
 
@@ -46,7 +49,7 @@ std::istream& Studentas::readStudent(std::istream& is) {
             numbers.push_back(x);
         }
         catch (...) {
-            break;
+            break;  // nutrūksta ties tekstu
         }
     }
 
@@ -60,33 +63,26 @@ std::istream& Studentas::readStudent(std::istream& is) {
     return is;
 }
 
+// Operator >> (naudoja readStudent)
 std::istream& operator>>(std::istream& is, Studentas& s) {
     return s.readStudent(is);
 }
 
-std::ostream& operator<<(std::ostream& os, const Studentas& s) {
-    os << s.var() << " " << s.pav() << " | ND: ";
+// Operator << jau realizuotas per virtualų print() studentas.h faile
 
-    for (size_t i = 0; i < s.paz().size(); ++i) {
-        os << s.paz()[i];
-        if (i < s.paz().size() - 1) os << ", ";
-    }
 
-    os << " | Egz: " << s.egz()
-        << " | Gal(Vid): " << fixed << setprecision(2) << s.galVid()
-        << " | Gal(Med): " << fixed << setprecision(2) << s.galMed();
-
-    return os;
-}
-
+// --- Įvedimo pagal pasirinkimą funkcija Stud_iv ---
 Studentas Stud_iv(int budas) {
     Studentas st;
 
     if (budas == 1) {
         cout << "Iveskite varda: ";
-        string v; cin >> v;
+        string v;
+        cin >> v;
+
         cout << "Iveskite pavarde: ";
-        string p; cin >> p;
+        string p;
+        cin >> p;
 
         st.setVar(v);
         st.setPav(p);
@@ -105,15 +101,19 @@ Studentas Stud_iv(int budas) {
         int egz;
         cout << "Egzamino pazymys: ";
         cin >> egz;
-        st.setEgz(egz);
 
+        st.setEgz(egz);
         st.computeGalutiniai();
     }
+
     else if (budas == 2) {
         cout << "Iveskite varda: ";
-        string v; cin >> v;
+        string v;
+        cin >> v;
+
         cout << "Iveskite pavarde: ";
-        string p; cin >> p;
+        string p;
+        cin >> p;
 
         st.setVar(v);
         st.setPav(p);
@@ -122,7 +122,8 @@ Studentas Stud_iv(int budas) {
 
         vector<int> paz;
         string line;
-        getline(cin, line);
+
+        getline(cin, line); // išvalyti buferį
 
         while (true) {
             getline(cin, line);
@@ -142,11 +143,15 @@ Studentas Stud_iv(int budas) {
         st.setEgz(egz);
         st.computeGalutiniai();
     }
+
     else if (budas == 3) {
         cout << "Iveskite varda: ";
-        string v; cin >> v;
+        string v;
+        cin >> v;
+
         cout << "Iveskite pavarde: ";
-        string p; cin >> p;
+        string p;
+        cin >> p;
 
         st.setVar(v);
         st.setPav(p);
@@ -157,7 +162,7 @@ Studentas Stud_iv(int budas) {
 
         vector<int> paz(k);
         for (int i = 0; i < k; i++)
-            paz[i] = rand() % 10 + 1; 
+            paz[i] = rand() % 10 + 1;
 
         st.setPaz(paz);
 
@@ -166,7 +171,6 @@ Studentas Stud_iv(int budas) {
 
         st.computeGalutiniai();
     }
-
 
     return st;
 }
