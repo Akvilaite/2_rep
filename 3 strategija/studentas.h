@@ -5,6 +5,8 @@
 #include <ostream>
 #include <iomanip>
 #include <iostream>
+#include "zmogus.h"
+
 
 
 class Studentas {
