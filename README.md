@@ -1,4 +1,4 @@
-# v1.2 specifikacijos:
+# v1.5 specifikacijos:
 
 <pre>
 CPU Intel Core i9-12900H, 12-oji karta, 14 branduolių (6 P + 8 E), 20 gijų, 2.5 GHz bazinis dažnis, iki 5.0 GHz
