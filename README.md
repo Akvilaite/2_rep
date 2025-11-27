@@ -6,7 +6,23 @@ RAM 16 GB DDR5-4800 MHz, 2× 8 GB
 SSD - 1 TB PCIe Gen 4 NVMe M.2 SSD 
 <pre>
 
+## Aprašymas:
+   v1.5 buvo pridėta abstrakti klasė Zmogus, su vardas ir pavarde kintamaisiais ir sukurtas zmogus.h failas.
+   Atnaujinti studentas.cpp ir studentas.h failai
+   papildziau main.cpp faila su demonstracija
 
+## Demonstracija:
+<img width="750" height="273" alt="image" src="https://github.com/user-attachments/assets/acc9e2e5-17ff-4ffe-b88d-f38aae14cd47" /> 
+   kompiliacija įvyksta kai klasės Zmogus nenaudojame:
+   <img width="834" height="106" alt="image" src="https://github.com/user-attachments/assets/80e3f068-a61d-4442-818c-0894c5151a76" />
+
+
+   atkomentuojame eilutę, kur yra zmogus z:
+   <img width="773" height="202" alt="image" src="https://github.com/user-attachments/assets/2757056a-b2e3-4980-904a-d06cb40871d2" />
+matome, kad kompiliacija neįvyko, nes klasė Zmogus yra abstrakti
+   <img width="700" height="55" alt="image" src="https://github.com/user-attachments/assets/496c9730-1439-4a94-bc91-e991b83cef05" />
+
+   
 # programos paleidimas
 </pre>
 1. Atsisiųsti v1.0 release failus
@@ -43,63 +59,3 @@ išves rezultatus ekrane ir į failus.
 
 ## Aprašymas
 Programa skirta studentų pažymių tvarkymui, galutinio balo skaičiavimui ir rūšiavimui.
-
----
-
-### Realizuoti Rule of Three metodai
-
-#### 1. Destruktorius `~Studentas()`
-**Paskirtis:** Atlaisvina resursus prieš objekto sunaikinimą.
-
-#### 2. Copy Konstruktorius `Studentas(const Studentas& other)`
-
-**Paskirtis:** Sukuria naują objektą kaip esamo kopiją.
-
-#### 3. Assignment Operatorius `operator=`
-
-**Paskirtis:** Priskiria vieno objekto reikšmes kitam.
-
-<img width="1680" height="475" alt="image" src="https://github.com/user-attachments/assets/c2d11158-544e-4d8a-97cb-9e36c152ce61" />
-<img width="1076" height="517" alt="image" src="https://github.com/user-attachments/assets/3b075075-7624-4b02-a426-c963d4e0ae58" />
-
-
-## Duomenų įvesties būdai
-
-| Būdas | Aprašymas | Kodas |
-|-------|-----------|-------|
-| **1 - Žinomas pažymių skaičius** | Vartotojas įveda visus duomenis rankiniu būdu | `cin >> studentas` |
-| **2 - Nežinomas pažymių skaičius** | Įvedimas su ENTER pabaiga | `readStudent(cin)` |
-| **3 - Generuoti pažymius** | Automatinis generavimas | `rand()` funkcijos |
-| **4 - Iš failo** | Nuskaitymas iš `.txt` failo | `ifstream >> studentas` |
-
----
-
-## Duomenų išvesties būdai
-
-| Būdas | Aprašymas | Kodas |
-|-------|-----------|-------|
-| **Į failą** | Išsaugojimas `.txt` faile | `ofstream << studentas` |
-
-
----
-
-
-## Testavimo rezultatai
-
-### Įvesties/Išvesties operatorių testavimas
-
-| Testas | Rezultatas | Pastabos |
-|--------|-----------|----------|
-| `cin >> studentas` | Veikia | Nuskaito vardą, pavardę, pažymius |
-| `cout << studentas` | Veikia | Išveda formatuotą informaciją |
-| `ifstream >> studentas` | Veikia | Skaito iš failo |
-| `ofstream << studentas` | Veikia | Rašo į failą |
-
-### Rule of Three testavimas
-
-| Metodas | Testas | Rezultatas |
-|---------|--------|-----------|
-| Destruktorius | Objekto sunaikinimas | Atmintis atlaisvinama |
-| Copy konstruktorius | `Studentas s2(s1)` | Sukuria identiška kopija |
-| Assignment | `s1 = s2` | Priskiria reikšmes teisingai |
-| Self-assignment | `s1 = s1` | Apsauga veikia |
