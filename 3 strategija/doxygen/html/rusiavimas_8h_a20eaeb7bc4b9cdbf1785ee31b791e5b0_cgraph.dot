@@ -8,7 +8,11 @@ digraph "Rikiuoti"
   rankdir="LR";
   Node1 [id="Node000001",label="Rikiuoti",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="Studentas::galMed",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ad015ef779f21066b847a4839fa5e84f9",tooltip=" "];
+  Node2 [id="Node000002",label="Studentas::galMed",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ad015ef779f21066b847a4839fa5e84f9",tooltip="Grąžina galutinį įvertinimą (mediana)."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="Studentas::galVid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ae6e74fb02ad322889045ba1fcb54c1d8",tooltip=" "];
+  Node3 [id="Node000003",label="Studentas::galVid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ae6e74fb02ad322889045ba1fcb54c1d8",tooltip="Grąžina galutinį įvertinimą (vidurkis)."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Zmogus::pav",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_zmogus.html#aa438c0fe6d894da4588aed3c683d681e",tooltip="Grąžina pavardę"];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Zmogus::var",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_zmogus.html#a3d12d95bc729744bf1dd10559ccee45c",tooltip="Grąžina vardą"];
 }

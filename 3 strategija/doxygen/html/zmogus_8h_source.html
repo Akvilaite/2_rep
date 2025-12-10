@@ -92,32 +92,48 @@ $(function(){initNavTree('zmogus_8h_source.html','',''); });
   <div class="headertitle"><div class="title">zmogus.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="zmogus_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;istream&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<a href="zmogus_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span>Zmogus {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    std::string var_;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    std::string pav_;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    Zmogus() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    Zmogus(<span class="keyword">const</span> std::string&amp; v, <span class="keyword">const</span> std::string&amp; p) : var_(v), pav_(p) {}</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">virtual</span> ~Zmogus() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">inline</span> std::string var()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> var_; }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">inline</span> std::string pav()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> pav_; }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> setVar(<span class="keyword">const</span> std::string&amp; v) { var_ = v; }</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> setPav(<span class="keyword">const</span> std::string&amp; p) { pav_ = p; }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> print(std::ostream&amp; os) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;istream&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_zmogus.html">   21</a></span><span class="keyword">class </span><a class="code hl_function" href="class_zmogus.html#a905fef3b8ad421a6d023c7ebc295f48e">Zmogus</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_zmogus.html#a6867269cc503f47e4e7f247ed5f7eaa0">   23</a></span>    std::string <a class="code hl_variable" href="class_zmogus.html#a6867269cc503f47e4e7f247ed5f7eaa0">var_</a>;  </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_zmogus.html#a41f95a6793e83d1584925cc4f7df9b87">   24</a></span>    std::string <a class="code hl_variable" href="class_zmogus.html#a41f95a6793e83d1584925cc4f7df9b87">pav_</a>;  </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_zmogus.html#a905fef3b8ad421a6d023c7ebc295f48e">   30</a></span>    <a class="code hl_function" href="class_zmogus.html#a905fef3b8ad421a6d023c7ebc295f48e">Zmogus</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_zmogus.html#a74a810be1857d01eb55552c02ed1ac36">   37</a></span>    <a class="code hl_function" href="class_zmogus.html#a74a810be1857d01eb55552c02ed1ac36">Zmogus</a>(<span class="keyword">const</span> std::string&amp; v, <span class="keyword">const</span> std::string&amp; p) : <a class="code hl_variable" href="class_zmogus.html#a6867269cc503f47e4e7f247ed5f7eaa0">var_</a>(v), <a class="code hl_variable" href="class_zmogus.html#a41f95a6793e83d1584925cc4f7df9b87">pav_</a>(p) {}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_zmogus.html#a6183937c7da8254430a6c99cfa89fe69">   42</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_zmogus.html#a6183937c7da8254430a6c99cfa89fe69">~Zmogus</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_zmogus.html#a3d12d95bc729744bf1dd10559ccee45c">   48</a></span>    <span class="keyword">inline</span> std::string <a class="code hl_function" href="class_zmogus.html#a3d12d95bc729744bf1dd10559ccee45c">var</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_zmogus.html#a6867269cc503f47e4e7f247ed5f7eaa0">var_</a>; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_zmogus.html#aa438c0fe6d894da4588aed3c683d681e">   54</a></span>    <span class="keyword">inline</span> std::string <a class="code hl_function" href="class_zmogus.html#aa438c0fe6d894da4588aed3c683d681e">pav</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_zmogus.html#a41f95a6793e83d1584925cc4f7df9b87">pav_</a>; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_zmogus.html#ada2c7378ba2defedbad45b86985bfee4">   60</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_zmogus.html#ada2c7378ba2defedbad45b86985bfee4">setVar</a>(<span class="keyword">const</span> std::string&amp; v) { <a class="code hl_variable" href="class_zmogus.html#a6867269cc503f47e4e7f247ed5f7eaa0">var_</a> = v; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_zmogus.html#a2ff96de24d0928085ab64641a4b975ed">   66</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_zmogus.html#a2ff96de24d0928085ab64641a4b975ed">setPav</a>(<span class="keyword">const</span> std::string&amp; p) { <a class="code hl_variable" href="class_zmogus.html#a41f95a6793e83d1584925cc4f7df9b87">pav_</a> = p; }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_zmogus.html#a54c34a84f8fee7c318a3c69072521b5f">   74</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_zmogus.html#a54c34a84f8fee7c318a3c69072521b5f">print</a>(std::ostream&amp; os) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="ttc" id="aclass_zmogus_html_a2ff96de24d0928085ab64641a4b975ed"><div class="ttname"><a href="class_zmogus.html#a2ff96de24d0928085ab64641a4b975ed">Zmogus::setPav</a></div><div class="ttdeci">void setPav(const std::string &amp;p)</div><div class="ttdoc">Nustato pavardę</div><div class="ttdef"><b>Definition</b> zmogus.h:66</div></div>
+<div class="ttc" id="aclass_zmogus_html_a3d12d95bc729744bf1dd10559ccee45c"><div class="ttname"><a href="class_zmogus.html#a3d12d95bc729744bf1dd10559ccee45c">Zmogus::var</a></div><div class="ttdeci">std::string var() const</div><div class="ttdoc">Grąžina vardą</div><div class="ttdef"><b>Definition</b> zmogus.h:48</div></div>
+<div class="ttc" id="aclass_zmogus_html_a41f95a6793e83d1584925cc4f7df9b87"><div class="ttname"><a href="class_zmogus.html#a41f95a6793e83d1584925cc4f7df9b87">Zmogus::pav_</a></div><div class="ttdeci">std::string pav_</div><div class="ttdoc">Žmogaus pavardė</div><div class="ttdef"><b>Definition</b> zmogus.h:24</div></div>
+<div class="ttc" id="aclass_zmogus_html_a54c34a84f8fee7c318a3c69072521b5f"><div class="ttname"><a href="class_zmogus.html#a54c34a84f8fee7c318a3c69072521b5f">Zmogus::print</a></div><div class="ttdeci">virtual void print(std::ostream &amp;os) const =0</div><div class="ttdoc">Gryna virtuali funkcija spausdinimui.</div></div>
+<div class="ttc" id="aclass_zmogus_html_a6183937c7da8254430a6c99cfa89fe69"><div class="ttname"><a href="class_zmogus.html#a6183937c7da8254430a6c99cfa89fe69">Zmogus::~Zmogus</a></div><div class="ttdeci">virtual ~Zmogus()=default</div><div class="ttdoc">Virtualus destruktorius.</div></div>
+<div class="ttc" id="aclass_zmogus_html_a6867269cc503f47e4e7f247ed5f7eaa0"><div class="ttname"><a href="class_zmogus.html#a6867269cc503f47e4e7f247ed5f7eaa0">Zmogus::var_</a></div><div class="ttdeci">std::string var_</div><div class="ttdoc">Žmogaus vardas.</div><div class="ttdef"><b>Definition</b> zmogus.h:23</div></div>
+<div class="ttc" id="aclass_zmogus_html_a74a810be1857d01eb55552c02ed1ac36"><div class="ttname"><a href="class_zmogus.html#a74a810be1857d01eb55552c02ed1ac36">Zmogus::Zmogus</a></div><div class="ttdeci">Zmogus(const std::string &amp;v, const std::string &amp;p)</div><div class="ttdoc">Konstruktorius su parametrais.</div><div class="ttdef"><b>Definition</b> zmogus.h:37</div></div>
+<div class="ttc" id="aclass_zmogus_html_a905fef3b8ad421a6d023c7ebc295f48e"><div class="ttname"><a href="class_zmogus.html#a905fef3b8ad421a6d023c7ebc295f48e">Zmogus::Zmogus</a></div><div class="ttdeci">Zmogus()=default</div><div class="ttdoc">Numatytasis konstruktorius.</div></div>
+<div class="ttc" id="aclass_zmogus_html_aa438c0fe6d894da4588aed3c683d681e"><div class="ttname"><a href="class_zmogus.html#aa438c0fe6d894da4588aed3c683d681e">Zmogus::pav</a></div><div class="ttdeci">std::string pav() const</div><div class="ttdoc">Grąžina pavardę</div><div class="ttdef"><b>Definition</b> zmogus.h:54</div></div>
+<div class="ttc" id="aclass_zmogus_html_ada2c7378ba2defedbad45b86985bfee4"><div class="ttname"><a href="class_zmogus.html#ada2c7378ba2defedbad45b86985bfee4">Zmogus::setVar</a></div><div class="ttdeci">void setVar(const std::string &amp;v)</div><div class="ttdoc">Nustato vardą</div><div class="ttdef"><b>Definition</b> zmogus.h:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

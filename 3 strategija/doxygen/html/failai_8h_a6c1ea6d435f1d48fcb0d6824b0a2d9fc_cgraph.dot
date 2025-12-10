@@ -8,9 +8,13 @@ digraph "Stud_from_file"
   rankdir="LR";
   Node1 [id="Node000001",label="Stud_from_file",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="Studentas::computeGalutiniai",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ab98ca82b80ea6bc623e6299264ce011a",tooltip=" "];
+  Node2 [id="Node000002",label="Studentas::computeGalutiniai",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ab98ca82b80ea6bc623e6299264ce011a",tooltip="Apskaičiuoja galutinius įvertinimus."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="Studentas::setEgz",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#af7a2740c86cee79b07ea47b3eb819280",tooltip=" "];
+  Node3 [id="Node000003",label="Studentas::setEgz",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#af7a2740c86cee79b07ea47b3eb819280",tooltip="Nustato egzamino pažymį"];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="Studentas::setPaz",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#a84f97bdb0e497dd25b3c19f912812cfb",tooltip=" "];
+  Node4 [id="Node000004",label="Zmogus::setPav",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_zmogus.html#a2ff96de24d0928085ab64641a4b975ed",tooltip="Nustato pavardę"];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Studentas::setPaz",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#a84f97bdb0e497dd25b3c19f912812cfb",tooltip="Nustato namų darbų pažymius."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Zmogus::setVar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_zmogus.html#ada2c7378ba2defedbad45b86985bfee4",tooltip="Nustato vardą"];
 }

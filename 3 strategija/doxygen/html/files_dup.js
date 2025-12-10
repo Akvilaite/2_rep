@@ -7,5 +7,5 @@ var files_dup =
     [ "studentas.cpp", "studentas_8cpp.html", "studentas_8cpp" ],
     [ "studentas.h", "studentas_8h.html", "studentas_8h" ],
     [ "testavimas.cpp", "testavimas_8cpp.html", "testavimas_8cpp" ],
-    [ "zmogus.h", "zmogus_8h.html", null ]
+    [ "zmogus.h", "zmogus_8h.html", "zmogus_8h" ]
 ];

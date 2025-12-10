@@ -107,6 +107,7 @@ Include dependency graph for studentas.cpp:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ac63003b577b137ac6ad5b1fb176bd59a" id="r_ac63003b577b137ac6ad5b1fb176bd59a"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac63003b577b137ac6ad5b1fb176bd59a">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="class_studentas.html">Studentas</a> &amp;s)</td></tr>
 <tr class="memitem:a36dd459c628d53a13300d6405590b427" id="r_a36dd459c628d53a13300d6405590b427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_studentas.html">Studentas</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36dd459c628d53a13300d6405590b427">Stud_iv</a> (int budas)</td></tr>
+<tr class="memdesc:a36dd459c628d53a13300d6405590b427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcija studento įvedimui iš konsolės.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ac63003b577b137ac6ad5b1fb176bd59a" name="ac63003b577b137ac6ad5b1fb176bd59a"></a>
@@ -127,6 +128,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is</td><td>Įvesties srautas </td></tr>
+    <tr><td class="paramname">s</td><td><a class="el" href="class_studentas.html" title="Klasė, reprezentuojanti studentą su pažymiais.">Studentas</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Nuoroda į srautą </dd></dl>
 
 </div>
 </div>
@@ -144,6 +153,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Funkcija studento įvedimui iš konsolės. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">budas</td><td>Įvedimo būdas (1-3) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sukurtas <a class="el" href="class_studentas.html" title="Klasė, reprezentuojanti studentą su pažymiais.">Studentas</a> objektas</dd></dl>
+<p>Būdai:</p><ul>
+<li>1: Žinomas pažymių skaičius</li>
+<li>2: Nežinomas pažymių skaičius (ENTER x2 baigia)</li>
+<li>3: Generuoti pažymius atsitiktinai </li>
+</ul>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
