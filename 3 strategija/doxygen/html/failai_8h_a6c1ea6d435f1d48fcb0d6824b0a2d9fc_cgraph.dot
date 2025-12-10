@@ -1,0 +1,16 @@
+digraph "Stud_from_file"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Stud_from_file",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Studentas::computeGalutiniai",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ab98ca82b80ea6bc623e6299264ce011a",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Studentas::setEgz",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#af7a2740c86cee79b07ea47b3eb819280",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Studentas::setPaz",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#a84f97bdb0e497dd25b3c19f912812cfb",tooltip=" "];
+}
