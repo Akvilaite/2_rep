@@ -1,0 +1,64 @@
+
+# Doxyfile konfigūracija studentų valdymo sistemai
+
+# Projekto informacija
+PROJECT_NAME           = "Studentų Valdymo Sistema v2.0"
+PROJECT_NUMBER         = 2.0
+PROJECT_BRIEF          = "C++ programa studentų pažymių analizei su OOP principais"
+
+# Įvesties nustatymai
+INPUT                  = . 
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = NO
+EXCLUDE_PATTERNS       = */build/* */cmake-build-*
+
+# Išvesties nustatymai
+OUTPUT_DIRECTORY       = doxygen
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+
+# Dokumentacijos stilius
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Grafikos generavimas
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = png
+INTERACTIVE_SVG        = YES
+
+# Optimizacija C++ kodui
+OPTIMIZE_OUTPUT_FOR_C  = NO
+BUILTIN_STL_SUPPORT    = YES
+CPP_CLI_SUPPORT        = NO
+
+# Komentarų apdorojimas
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+MULTILINE_CPP_IS_BRIEF = NO
+
+# Įspėjimai
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+
+# Išdėstymas
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 5
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+
+# Kalbos nustatymai
+OUTPUT_LANGUAGE        = English
