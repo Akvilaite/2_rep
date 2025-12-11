@@ -21,7 +21,8 @@ C++ programa studentų duomenų analizei.
 
 - Google Test framework (automatiškai atsisiunčiamas per CMake)
 - Doxygen 1.8+ (dokumentacijos generavimui)
-- Graphviz (grafikų dokumentacijoje generavimui)
+## Testavimas
+<img width="832" height="1049" alt="image" src="https://github.com/user-attachments/assets/f5b09609-9902-40f4-96f4-5b82b2bcca9d" />
 
 ## 📥 Įdiegimas
 
@@ -29,12 +30,14 @@ C++ programa studentų duomenų analizei.
 
 ```bash
 git clone https://github.com/Akvilaite/2_rep.git
-cd studentu-sistema
 ```
 
 ### 2A. Kompiliavimas su CMake (rekomenduojama)
 
 cd "3 strategijos vieta "
+
+# paleisti doxyfile
+doxygen Doxyfile
 
 # Sukurti build katalogą
 mkdir build
