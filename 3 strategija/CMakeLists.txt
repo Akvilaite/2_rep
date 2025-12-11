@@ -14,7 +14,7 @@ endif()
 
 # Pagrindinė programa
 add_executable(programa
-    main.cpp
+    "3 strategija.cpp"
     studentas.cpp
     failai.cpp
 )
