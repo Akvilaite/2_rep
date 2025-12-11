@@ -348,10 +348,23 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Apskaičiuoja galutinius įvertinimus. </p>
+<p>Apskaičiuoja galutinius įvertinimus (vidurkį ir medianą).</p>
 <p>Skaičiuoja galutinį įvertinimą pagal formulę:</p><ul>
 <li>Vidurkis: 0.4 * ND_vidurkis + 0.6 * Egzaminas</li>
-<li>Mediana: 0.4 * ND_mediana + 0.6 * Egzaminas </li>
+<li>Mediana: 0.4 * ND_mediana + 0.6 * Egzaminas</li>
 </ul>
+<p>Algoritmas:</p><ol type="1">
+<li>Jei nėra namų darbų pažymių, galutinis = egzaminas</li>
+<li>Skaičiuoja namų darbų vidurkį</li>
+<li>Skaičiuoja namų darbų medianą:<ul>
+<li>Jei nelyginis skaičius: vidurinė reikšmė</li>
+<li>Jei lyginis skaičius: dviejų vidurinių vidurkis</li>
+</ul>
+</li>
+<li>Apskaičiuoja galutinį: 0.4 * ND + 0.6 * Egzaminas</li>
+</ol>
+<dl class="section note"><dt>Note</dt><dd>Automatiškai iškviečiama po pažymių nustatymo </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a84f97bdb0e497dd25b3c19f912812cfb" title="Nustato namų darbų pažymius.">setPaz()</a>, <a class="el" href="#af7a2740c86cee79b07ea47b3eb819280" title="Nustato egzamino pažymį">setEgz()</a> </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -656,14 +669,37 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Nuskaito studento duomenis iš srauto. </p>
+<p>Nuskaito studento duomenis iš įvesties srauto.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">is</td><td>Įvesties srautas </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Nuoroda į srautą </dd></dl>
-<div class="dynheader">
+<dl class="section return"><dt>Returns</dt><dd>Nuoroda į srautą</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is</td><td>Įvesties srautas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Nuoroda į tą patį srautą (leidžia grandinį skaitymą)</dd></dl>
+<p>Tikėtinas formato: </p><div class="fragment"><div class="line">Vardas Pavarde ND1 ND2 ... NDn Egzaminas</div>
+</div><!-- fragment --><p>Algoritmas:</p><ol type="1">
+<li>Nuskaito vardą ir pavardę</li>
+<li>Skaito skaičius, kol nepavyksta konvertuoti</li>
+<li>Paskutinis skaičius - egzaminas</li>
+<li>Kiti skaičiai - namų darbų pažymiai</li>
+<li>Automatiškai apskaičiuoja galutinius įvertinimus</li>
+</ol>
+<dl class="section warning"><dt>Warning</dt><dd>Jei sraute nėra skaičių, egz_ ir paz_ lieka tušti/nuliui</dd></dl>
+<p>Pavyzdys: </p><div class="fragment"><div class="line">istringstream iss(<span class="stringliteral">&quot;Jonas Jonaitis 8 9 7 10&quot;</span>);</div>
+<div class="line"><a class="code hl_function" href="#a875cdf945b2e62c5220e5d326c7349d6">Studentas</a> s;</div>
+<div class="line">s.<a class="code hl_function" href="#a56cfe16f164d76b63f50898ef0a6403a">readStudent</a>(iss);</div>
+<div class="line"><span class="comment">// s.var() == &quot;Jonas&quot;, s.egz() == 10, s.paz().size() == 3</span></div>
+<div class="ttc" id="aclass_studentas_html_a56cfe16f164d76b63f50898ef0a6403a"><div class="ttname"><a href="#a56cfe16f164d76b63f50898ef0a6403a">Studentas::readStudent</a></div><div class="ttdeci">std::istream &amp; readStudent(std::istream &amp;is)</div><div class="ttdoc">Nuskaito studento duomenis iš srauto.</div><div class="ttdef"><b>Definition</b> studentas.cpp:85</div></div>
+<div class="ttc" id="aclass_studentas_html_a875cdf945b2e62c5220e5d326c7349d6"><div class="ttname"><a href="#a875cdf945b2e62c5220e5d326c7349d6">Studentas::Studentas</a></div><div class="ttdeci">Studentas()=default</div><div class="ttdoc">Numatytasis konstruktorius.</div></div>
+</div><!-- fragment --> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_studentas_a56cfe16f164d76b63f50898ef0a6403a_cgraph.png" border="0" usemap="#aclass_studentas_a56cfe16f164d76b63f50898ef0a6403a_cgraph" loading="lazy" alt=""/></div>
@@ -893,8 +929,18 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Nuoroda į srautą </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Nuoroda į srautą</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is</td><td>Įvesties srautas </td></tr>
+    <tr><td class="paramname">s</td><td><a class="el" href="class_studentas.html" title="Klasė, reprezentuojanti studentą su pažymiais.">Studentas</a> objektas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Nuoroda į srautą</dd></dl>
+<p>Leidžia naudoti: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#a875cdf945b2e62c5220e5d326c7349d6">Studentas</a> s;</div>
+<div class="line">cin &gt;&gt; s;</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>

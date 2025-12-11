@@ -14,10 +14,10 @@ digraph "Studentas::computeGalutiniai"
   Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="Studentas::Studentas",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#a00d6db6706f5e4182d3677ea4e90de61",tooltip="Konstruktorius, nuskaitantis duomenis iš srauto."];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="Stud_from_file",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc",tooltip=" "];
+  Node5 [id="Node000005",label="Stud_from_file",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc",tooltip="Nuskaito studentų duomenis iš tekstinio failo."];
   Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$3_01strategija_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+  Node6 [id="Node000006",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$3_01strategija_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="Pagrindinė programos funkcija."];
   Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="Stud_iv",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$studentas_8cpp.html#a36dd459c628d53a13300d6405590b427",tooltip="Funkcija studento įvedimui iš konsolės."];
+  Node7 [id="Node000007",label="Stud_iv",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$studentas_8cpp.html#a36dd459c628d53a13300d6405590b427",tooltip="Interaktyvi studento duomenų įvedimo funkcija."];
   Node7 -> Node6 [id="edge7_Node000007_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

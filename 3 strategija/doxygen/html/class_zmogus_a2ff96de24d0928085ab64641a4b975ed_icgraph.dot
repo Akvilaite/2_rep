@@ -8,10 +8,10 @@ digraph "Zmogus::setPav"
   rankdir="RL";
   Node1 [id="Node000001",label="Zmogus::setPav",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Nustato pavardę"];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="Stud_from_file",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc",tooltip=" "];
+  Node2 [id="Node000002",label="Stud_from_file",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc",tooltip="Nuskaito studentų duomenis iš tekstinio failo."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$3_01strategija_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+  Node3 [id="Node000003",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$3_01strategija_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="Pagrindinė programos funkcija."];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="Stud_iv",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$studentas_8cpp.html#a36dd459c628d53a13300d6405590b427",tooltip="Funkcija studento įvedimui iš konsolės."];
+  Node4 [id="Node000004",label="Stud_iv",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$studentas_8cpp.html#a36dd459c628d53a13300d6405590b427",tooltip="Interaktyvi studento duomenų įvedimo funkcija."];
   Node4 -> Node3 [id="edge4_Node000004_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

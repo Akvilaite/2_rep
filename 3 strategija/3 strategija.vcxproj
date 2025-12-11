@@ -126,6 +126,7 @@
     <ClCompile Include="3 strategija.cpp" />
     <ClCompile Include="failai.cpp" />
     <ClCompile Include="studentas.cpp" />
+    <ClCompile Include="test_studentas.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="failai.h" />

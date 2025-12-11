@@ -92,6 +92,9 @@ $(function(){initNavTree('failai_8h.html','',''); });
   <div class="headertitle"><div class="title">failai.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Failų operacijų deklaracijos.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="studentas_8h_source.html">studentas.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -114,11 +117,23 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6c1ea6d435f1d48fcb0d6824b0a2d9fc" id="r_a6c1ea6d435f1d48fcb0d6824b0a2d9fc"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_studentas.html">Studentas</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c1ea6d435f1d48fcb0d6824b0a2d9fc">Stud_from_file</a> (const string &amp;fname)</td></tr>
+<tr class="memdesc:a6c1ea6d435f1d48fcb0d6824b0a2d9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nuskaito studentų duomenis iš failo.  <br /></td></tr>
 <tr class="memitem:af23fb1f170c636ec799e9e71dc823822" id="r_af23fb1f170c636ec799e9e71dc823822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af23fb1f170c636ec799e9e71dc823822">GeneruotiFaila</a> ()</td></tr>
+<tr class="memdesc:af23fb1f170c636ec799e9e71dc823822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generuoja naują failą su atsitiktiniais studentų duomenimis.  <br /></td></tr>
 <tr class="memitem:a32207e6ad7bc506862b19fa472aea900" id="r_a32207e6ad7bc506862b19fa472aea900"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
 <tr class="memitem:a32207e6ad7bc506862b19fa472aea900 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32207e6ad7bc506862b19fa472aea900">Spausdinti</a> (const Container &amp;Grupe, const string &amp;out_file)</td></tr>
+<tr class="memdesc:a32207e6ad7bc506862b19fa472aea900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spausdina studentų duomenis į failą lentelės formatu.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Failų operacijų deklaracijos. </p>
+<dl class="section author"><dt>Author</dt><dd>Jūsų vardas </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024</dd></dl>
+<p>Šis failas apibrėžia funkcijas darbui su failais:</p><ul>
+<li>Studentų duomenų nuskaitymas iš failų</li>
+<li>Naujų failų generavimas su atsitiktiniais duomenimis</li>
+<li>Rezultatų išvedimas į failus </li>
+</ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="af23fb1f170c636ec799e9e71dc823822" name="af23fb1f170c636ec799e9e71dc823822"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af23fb1f170c636ec799e9e71dc823822">&#9670;&#160;</a></span>GeneruotiFaila()</h2>
 
@@ -133,6 +148,51 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Generuoja naują failą su atsitiktiniais studentų duomenimis. </p>
+<p>Funkcija:</p><ul>
+<li>Paprašo įvesti studentų skaičių</li>
+<li>Sukuria failą pavadinimu "studN.txt" (N - studentų skaičius)</li>
+<li>Sugeneruoja 15 namų darbų pažymių ir egzamino pažymį kiekvienam</li>
+<li>Pažymiai: atsitiktiniai skaičiai nuo 1 iki 10</li>
+</ul>
+<p>Pavyzdys: </p><div class="fragment"><div class="line"><a class="code hl_function" href="failai_8cpp.html#af23fb1f170c636ec799e9e71dc823822">GeneruotiFaila</a>();</div>
+<div class="line"><span class="comment">// Konsole: &quot;Iveskite studentu kieki: &quot;</span></div>
+<div class="line"><span class="comment">// Įvedus 1000, sukuriamas failas &quot;stud1000.txt&quot;</span></div>
+<div class="ttc" id="afailai_8cpp_html_af23fb1f170c636ec799e9e71dc823822"><div class="ttname"><a href="failai_8cpp.html#af23fb1f170c636ec799e9e71dc823822">GeneruotiFaila</a></div><div class="ttdeci">void GeneruotiFaila()</div><div class="ttdoc">Generuoja naują failą su atsitiktiniais studentų duomenimis.</div><div class="ttdef"><b>Definition</b> failai.cpp:150</div></div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Naudoja rand() funkciją, inicializuotą su srand(time(nullptr))</dd></dl>
+<p><b>Veikimo eiga:</b></p><ol type="1">
+<li>Paprašo vartotojo įvesti studentų skaičių</li>
+<li>Sukuria failą pavadinimu "studN.txt" (N - studentų skaičius)</li>
+<li>Įrašo antraštę</li>
+<li>Kiekvienam studentui:<ul>
+<li>Vardas: "VardasN" (N - studentų numeris)</li>
+<li>Pavardė: "PavardeN"</li>
+<li>Generuoja 15 atsitiktinių ND pažymių (1-10)</li>
+<li>Generuoja atsitiktinį egzamino pažymį (1-10)</li>
+</ul>
+</li>
+</ol>
+<p><b>Išvesties failo formatas:</b> </p><div class="fragment"><div class="line">Vardas         Pavarde        ND1   ND2   ...   ND15  Egz.</div>
+<div class="line">Vardas1        Pavarde1       7     8     ...   9     10</div>
+<div class="line">Vardas2        Pavarde2       5     6     ...   8     7</div>
+</div><!-- fragment --><p><b>Naudojimas:</b></p><ul>
+<li>Testavimui su dideliais duomenų kiekiais</li>
+<li>Efektyvumo matavimams</li>
+<li>Automatiniam failų kūrimui</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Naudoja rand() - turėtų būti inicializuota su srand(time(nullptr)) </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Jei failas negali būti sukurtas, išveda klaidos pranešimą</dd></dl>
+<p><b>Generuojamų failų pavyzdžiai:</b></p><ul>
+<li>1000 studentų → stud1000.txt</li>
+<li>10000 studentų → stud10000.txt</li>
+<li>100000 studentų → stud100000.txt</li>
+</ul>
+<p>Pavyzdys: </p><div class="fragment"><div class="line">srand(time(<span class="keyword">nullptr</span>)); <span class="comment">// Inicializuoti RNG</span></div>
+<div class="line"><a class="code hl_function" href="failai_8cpp.html#af23fb1f170c636ec799e9e71dc823822">GeneruotiFaila</a>();</div>
+<div class="line"><span class="comment">// Konsolėje: &quot;Iveskite studentu kieki: &quot;</span></div>
+<div class="line"><span class="comment">// Įvedus 1000: sukuriamas failas &quot;stud1000.txt&quot;</span></div>
+</div><!-- fragment --><p>@complexity O(n * m), kur n - studentų skaičius, m - pažymių skaičius (15) </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -161,6 +221,27 @@ template&lt;typename Container&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Spausdina studentų duomenis į failą lentelės formatu. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Container</td><td>Konteinerio tipas (vector arba list) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Grupe</td><td>Studentų konteineris </td></tr>
+    <tr><td class="paramname">out_file</td><td>Išvesties failo pavadinimas</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Funkcija yra šabloninė ir veikia su:</p><ul>
+<li>std::vector&lt;Studentas&gt;</li>
+<li>std::list&lt;Studentas&gt;</li>
+<li>kitais sekų konteineriais</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Jei failas negali būti atidarytas, funkcija grįžta be veiksmų </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -183,6 +264,59 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Nuskaito studentų duomenis iš failo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Failo pavadinimas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector studentų objektų</dd></dl>
+<p>Failo formatas:</p><ul>
+<li>Pirmoje eilutėje: antraštė (praleidžiama)</li>
+<li>Kitose eilutėse: Vardas Pavardė ND1 ND2 ... NDn Egzaminas</li>
+</ul>
+<p>Pavyzdys: </p><div class="fragment"><div class="line">Vardas Pavarde ND1 ND2 ND3 Egz.</div>
+<div class="line">Jonas Jonaitis 8 9 7 10</div>
+</div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>Jei failas neegzistuoja, grąžinamas tuščias vektorius</dd></dl>
+<p>Nuskaito studentų duomenis iš failo.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Failo pavadinimas/kelias </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector studentų objektų</dd></dl>
+<p><b>Failo formatas:</b> </p><div class="fragment"><div class="line">Vardas    Pavarde    ND1  ND2  ...  NDn  Egz.</div>
+<div class="line">Jonas     Jonaitis   8    9    7    10</div>
+<div class="line">Petras    Petraitis  7    8    9    8</div>
+</div><!-- fragment --><p><b>Algoritmas:</b></p><ol type="1">
+<li>Atidaro failą skaitymui</li>
+<li>Praleidžia pirmą eilutę (antraštė)</li>
+<li>Kiekvienai eilutei:<ul>
+<li>Nuskaito vardą ir pavardę</li>
+<li>Nuskaito visus skaičius į laikiną vektorių</li>
+<li>Paskutinis skaičius yra egzaminas</li>
+<li>Kiti skaičiai - namų darbų pažymiai</li>
+</ul>
+</li>
+<li>Sukuria <a class="el" href="class_studentas.html" title="Klasė, reprezentuojanti studentą su pažymiais.">Studentas</a> objektus ir grąžina vektorių</li>
+</ol>
+<p><b>Klaidų tvarkymas:</b></p><ul>
+<li>Jei failas neegzistuoja: išveda pranešimą ir grąžina tuščią vektorių</li>
+<li>Jei eilutė yra tuščia: praleidžia</li>
+<li>Jei eilutėje mažiau nei 2 skaičiai: praleidžia eilutę</li>
+<li>Jei nepavyksta nuskaityti vardo/pavardės: praleidžia eilutę</li>
+</ul>
+<dl class="section warning"><dt>Warning</dt><dd>Jei failas nerastas, grąžina tuščią vektorių be exception </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Funkcija taupo atmintį: skaito po vieną eilutę, ne visą failą</dd></dl>
+<p>Pavyzdys: </p><div class="fragment"><div class="line">vector&lt;Studentas&gt; studentai = <a class="code hl_function" href="failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc">Stud_from_file</a>(<span class="stringliteral">&quot;studentai.txt&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (studentai.empty()) {</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Failas tuscias arba nerastas\n&quot;</span>;</div>
+<div class="line">}</div>
+<div class="ttc" id="afailai_8cpp_html_a6c1ea6d435f1d48fcb0d6824b0a2d9fc"><div class="ttname"><a href="failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc">Stud_from_file</a></div><div class="ttdeci">vector&lt; Studentas &gt; Stud_from_file(const string &amp;fname)</div><div class="ttdoc">Nuskaito studentų duomenis iš tekstinio failo.</div><div class="ttdef"><b>Definition</b> failai.cpp:60</div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_studentas.html#a84f97bdb0e497dd25b3c19f912812cfb" title="Nustato namų darbų pažymius.">Studentas::setPaz()</a>, <a class="el" href="class_studentas.html#af7a2740c86cee79b07ea47b3eb819280" title="Nustato egzamino pažymį">Studentas::setEgz()</a>, <a class="el" href="class_studentas.html#ab98ca82b80ea6bc623e6299264ce011a" title="Apskaičiuoja galutinius įvertinimus.">Studentas::computeGalutiniai()</a> </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -110,6 +110,7 @@ Include dependency graph for 3 strategija.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pagrindinė programos funkcija.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -126,6 +127,74 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pagrindinė programos funkcija. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 - sėkminga, kitu atveju - klaida</dd></dl>
+<p><b>Programos eiga:</b></p>
+<ol type="1">
+<li><b>Inicializacija:</b><ul>
+<li>Išjungia C/C++ srauto sinchronizaciją (greičiui)</li>
+<li>Inicializuoja random number generator</li>
+</ul>
+</li>
+<li><b>Konteinerio pasirinkimas:</b><ul>
+<li>1: vector&lt;Studentas&gt;</li>
+<li>2: list&lt;Studentas&gt;</li>
+</ul>
+</li>
+<li><b>Duomenų įvedimas:</b><ul>
+<li>1: Žinomas pažymių skaičius</li>
+<li>2: Nežinomas pažymių skaičius (ENTER baigia)</li>
+<li>3: Atsitiktinis generavimas</li>
+<li>4: Nuskaityti iš failo</li>
+<li>5: Sugeneruoti naują failą</li>
+</ul>
+</li>
+<li><b>Rikiavimas:</b><ul>
+<li>Pagal vardą/pavardę</li>
+<li>Pagal galutinį vidurkį</li>
+<li>Pagal galutinę medianą</li>
+</ul>
+</li>
+<li><b>Skirstymas:</b><ul>
+<li>Strategija 1: Pradinis metodas</li>
+<li>Strategija 2: Erase/remove</li>
+<li>Strategija 3: Partition/splice</li>
+</ul>
+</li>
+<li><b>Rezultatų išvedimas:</b><ul>
+<li>vargsiukai.txt - studentai su gal. &lt; 5.0</li>
+<li>[failas].txt - studentai su gal. &gt;= 5.0</li>
+</ul>
+</li>
+<li><b>Laiko matavimas:</b><ul>
+<li>Failo nuskaitymo laikas</li>
+<li>Skirstymo laikas</li>
+<li>Išvedimo laikas</li>
+<li>Bendras laikas</li>
+</ul>
+</li>
+</ol>
+<p><b>Laiko matavimo mechanizmas:</b> </p><div class="fragment"><div class="line"><span class="keyword">auto</span> start = high_resolution_clock::now();</div>
+<div class="line"><span class="comment">// ... operacija ...</span></div>
+<div class="line"><span class="keyword">auto</span> end = high_resolution_clock::now();</div>
+<div class="line"><span class="keywordtype">double</span> laikas = duration_cast&lt;duration&lt;double&gt;&gt;(end - start).count();</div>
+</div><!-- fragment --><p><b>Optimizacijos:</b></p><ul>
+<li>ios::sync_with_stdio(false) - greitesnis I/O</li>
+<li>Template funkcijos - compile-time optimizacija</li>
+<li>Move semantics - efektyvus duomenų perkėlimas</li>
+<li>In-place algoritmai - mažiau kopijavimo</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Programa automatiškai pasirenka efektyviausią algoritmą pagal konteinerio tipą </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Strategija 1 neimplementuota šioje versijoje (naudokite 2 arba 3) </dd></dl>
+<p>Išjungia C stdio ir C++ iostream sinchronizaciją. Tai pagreitina I/O operacijas, bet negalima maišyti printf/scanf su cout/cin.</p>
+<p>Inicializuoja random number generator su dabartiniu laiku. Užtikrina skirtingus rezultatus kiekviename paleidime.</p>
+<p>&lt; Failo nuskaitymo laikas (s)</p>
+<p>&lt; Studentų skirstymo laikas (s)</p>
+<p>&lt; Rezultatų išvedimo laikas (s)</p>
+<p>&lt; Vector konteineris studentams</p>
+<p>&lt; List konteineris studentams</p>
+<p>&lt; Failo pavadinimas</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

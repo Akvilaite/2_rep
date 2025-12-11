@@ -10,11 +10,11 @@ digraph "main"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="GenerateTestFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$testavimas_8cpp.html#adf46538f851bda75747c4113ee125030",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="Spausdinti",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8h.html#a32207e6ad7bc506862b19fa472aea900",tooltip=" "];
+  Node3 [id="Node000003",label="Spausdinti",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8h.html#a32207e6ad7bc506862b19fa472aea900",tooltip="Spausdina studentų duomenis į failą lentelės formatu."];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="Strategija3",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$rusiavimas_8h.html#a8e96ce3e05eaabba2fe4de59e310365a",tooltip=" "];
+  Node4 [id="Node000004",label="Strategija3",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$rusiavimas_8h.html#a8e96ce3e05eaabba2fe4de59e310365a",tooltip="Strategija 3: Optimizuotas partition/splice metodas."];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="Stud_from_file",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc",tooltip=" "];
+  Node5 [id="Node000005",label="Stud_from_file",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8cpp.html#a6c1ea6d435f1d48fcb0d6824b0a2d9fc",tooltip="Nuskaito studentų duomenis iš tekstinio failo."];
   Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="Studentas::computeGalutiniai",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ab98ca82b80ea6bc623e6299264ce011a",tooltip="Apskaičiuoja galutinius įvertinimus."];
   Node5 -> Node7 [id="edge6_Node000005_Node000007",color="steelblue1",style="solid",tooltip=" "];

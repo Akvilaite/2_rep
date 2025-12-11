@@ -39,7 +39,7 @@ digraph "testavimas.cpp"
   Node10 -> Node8 [id="edge19_Node000010_Node000008",color="steelblue1",style="solid",tooltip=" "];
   Node10 -> Node2 [id="edge20_Node000010_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node14 [id="edge21_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="failai.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8h.html",tooltip=" "];
+  Node14 [id="Node000014",label="failai.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$failai_8h.html",tooltip="Failų operacijų deklaracijos."];
   Node14 -> Node10 [id="edge22_Node000014_Node000010",color="steelblue1",style="solid",tooltip=" "];
   Node14 -> Node5 [id="edge23_Node000014_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node14 -> Node4 [id="edge24_Node000014_Node000004",color="steelblue1",style="solid",tooltip=" "];
@@ -48,7 +48,7 @@ digraph "testavimas.cpp"
   Node14 -> Node3 [id="edge26_Node000014_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node14 -> Node8 [id="edge27_Node000014_Node000008",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node16 [id="edge28_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
-  Node16 [id="Node000016",label="rusiavimas.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$rusiavimas_8h.html",tooltip=" "];
+  Node16 [id="Node000016",label="rusiavimas.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$rusiavimas_8h.html",tooltip="Šabloninės funkcijos studentų rikiavimui ir skirstymui."];
   Node16 -> Node10 [id="edge29_Node000016_Node000010",color="steelblue1",style="solid",tooltip=" "];
   Node16 -> Node4 [id="edge30_Node000016_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node16 -> Node15 [id="edge31_Node000016_Node000015",color="steelblue1",style="solid",tooltip=" "];

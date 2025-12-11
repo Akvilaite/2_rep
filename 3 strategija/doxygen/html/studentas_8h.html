@@ -156,9 +156,40 @@ Functions</h2></td></tr>
 <p>Būdai:</p><ul>
 <li>1: Žinomas pažymių skaičius</li>
 <li>2: Nežinomas pažymių skaičius (ENTER x2 baigia)</li>
-<li>3: Generuoti pažymius atsitiktinai </li>
+<li>3: Generuoti pažymius atsitiktinai</li>
 </ul>
-<div class="dynheader">
+<p>Funkcija studento įvedimui iš konsolės.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">budas</td><td>Įvedimo būdas (1, 2 arba 3) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sukurtas <a class="el" href="class_studentas.html" title="Klasė, reprezentuojanti studentą su pažymiais.">Studentas</a> objektas</dd></dl>
+<p><b>Būdas 1: Žinomas pažymių skaičius</b></p><ul>
+<li>Paprašo įvesti vardą, pavardę</li>
+<li>Paklaus kiek bus pažymių</li>
+<li>Leidžia įvesti visus pažymius</li>
+<li>Paprašo egzamino pažymio</li>
+</ul>
+<p><b>Būdas 2: Nežinomas pažymių skaičius</b></p><ul>
+<li>Paprašo įvesti vardą, pavardę</li>
+<li>Leidžia įvesti pažymius po vieną</li>
+<li>Tuščia eilutė (ENTER) baigia pažymių įvedimą</li>
+<li>Paprašo egzamino pažymio</li>
+</ul>
+<p><b>Būdas 3: Atsitiktinis generavimas</b></p><ul>
+<li>Paprašo įvesti vardą, pavardę</li>
+<li>Paklaus kiek generuoti pažymių</li>
+<li>Sugeneruoja atsitiktinius pažymius (1-10)</li>
+<li>Sugeneruoja atsitiktinį egzamino pažymį</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Naudoja rand() funkciją (turėtų būti inicializuota su srand()) </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Būdai 1 ir 2 reikalauja rankinės įvesties iš stdin</dd></dl>
+<p>Pavyzdys: </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_studentas.html">Studentas</a> s = <a class="code hl_function" href="studentas_8cpp.html#a36dd459c628d53a13300d6405590b427">Stud_iv</a>(3); <span class="comment">// Generuoti atsitiktinius duomenis</span></div>
+<div class="ttc" id="aclass_studentas_html"><div class="ttname"><a href="class_studentas.html">Studentas</a></div><div class="ttdoc">Klasė, reprezentuojanti studentą su pažymiais.</div><div class="ttdef"><b>Definition</b> studentas.h:26</div></div>
+<div class="ttc" id="astudentas_8cpp_html_a36dd459c628d53a13300d6405590b427"><div class="ttname"><a href="studentas_8cpp.html#a36dd459c628d53a13300d6405590b427">Stud_iv</a></div><div class="ttdeci">Studentas Stud_iv(int budas)</div><div class="ttdoc">Interaktyvi studento duomenų įvedimo funkcija.</div><div class="ttdef"><b>Definition</b> studentas.cpp:163</div></div>
+</div><!-- fragment --> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="studentas_8h_a36dd459c628d53a13300d6405590b427_cgraph.png" border="0" usemap="#astudentas_8h_a36dd459c628d53a13300d6405590b427_cgraph" loading="lazy" alt=""/></div>

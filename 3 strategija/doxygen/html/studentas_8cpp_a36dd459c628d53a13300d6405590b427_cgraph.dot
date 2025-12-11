@@ -6,7 +6,7 @@ digraph "Stud_iv"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node1 [id="Node000001",label="Stud_iv",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Funkcija studento įvedimui iš konsolės."];
+  Node1 [id="Node000001",label="Stud_iv",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Interaktyvi studento duomenų įvedimo funkcija."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="Studentas::computeGalutiniai",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_studentas.html#ab98ca82b80ea6bc623e6299264ce011a",tooltip="Apskaičiuoja galutinius įvertinimus."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];

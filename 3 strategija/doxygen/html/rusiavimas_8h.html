@@ -92,6 +92,9 @@ $(function(){initNavTree('rusiavimas_8h.html','',''); });
   <div class="headertitle"><div class="title">rusiavimas.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Šabloninės funkcijos studentų rikiavimui ir skirstymui.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="studentas_8h_source.html">studentas.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;list&gt;</code><br />
@@ -117,14 +120,27 @@ This graph shows which files directly or indirectly include this file:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a20eaeb7bc4b9cdbf1785ee31b791e5b0" id="r_a20eaeb7bc4b9cdbf1785ee31b791e5b0"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
 <tr class="memitem:a20eaeb7bc4b9cdbf1785ee31b791e5b0 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20eaeb7bc4b9cdbf1785ee31b791e5b0">Rikiuoti</a> (Container &amp;Grupe)</td></tr>
+<tr class="memdesc:a20eaeb7bc4b9cdbf1785ee31b791e5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rikiuoja studentų konteinerį pagal pasirinktą kriterijų  <br /></td></tr>
 <tr class="memitem:a8a31f3d5b3a0b27f4fb5ae823229932c" id="r_a8a31f3d5b3a0b27f4fb5ae823229932c"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
 <tr class="memitem:a8a31f3d5b3a0b27f4fb5ae823229932c template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a31f3d5b3a0b27f4fb5ae823229932c">Strategija2</a> (Container &amp;studentai, Container &amp;vargsiukai, int kriterijus)</td></tr>
+<tr class="memdesc:a8a31f3d5b3a0b27f4fb5ae823229932c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strategija 2: Klasikinis erase/remove metodas.  <br /></td></tr>
 <tr class="memitem:a8e96ce3e05eaabba2fe4de59e310365a" id="r_a8e96ce3e05eaabba2fe4de59e310365a"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
 <tr class="memitem:a8e96ce3e05eaabba2fe4de59e310365a template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e96ce3e05eaabba2fe4de59e310365a">Strategija3</a> (Container &amp;studentai, Container &amp;vargsiukai, int kriterijus)</td></tr>
+<tr class="memdesc:a8e96ce3e05eaabba2fe4de59e310365a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strategija 3: Optimizuotas partition/splice metodas.  <br /></td></tr>
 <tr class="memitem:ae2bf785894068e2f0d7269e4dce83ac0" id="r_ae2bf785894068e2f0d7269e4dce83ac0"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
 <tr class="memitem:ae2bf785894068e2f0d7269e4dce83ac0 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2bf785894068e2f0d7269e4dce83ac0">Strategija1</a> (const Container &amp;studentai, Container &amp;vargsiukai, Container &amp;kietiakai, int kriterijus)</td></tr>
+<tr class="memdesc:ae2bf785894068e2f0d7269e4dce83ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strategija 1: Pradinis skirstymas į du naujus konteinerius.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Šabloninės funkcijos studentų rikiavimui ir skirstymui. </p>
+<dl class="section author"><dt>Author</dt><dd>Jūsų vardas </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024</dd></dl>
+<p>Šis failas apima:</p><ul>
+<li>Universalias šablonas, veikiančias su vector ir list</li>
+<li>Tris skirtingas skirstymo strategijas</li>
+<li>Rikiavimo funkcijas pagal įvairius kriterijus </li>
+</ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a20eaeb7bc4b9cdbf1785ee31b791e5b0" name="a20eaeb7bc4b9cdbf1785ee31b791e5b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20eaeb7bc4b9cdbf1785ee31b791e5b0">&#9670;&#160;</a></span>Rikiuoti()</h2>
 
@@ -141,6 +157,38 @@ template&lt;typename Container&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Rikiuoja studentų konteinerį pagal pasirinktą kriterijų </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Container</td><td>Konteinerio tipas (vector&lt;Studentas&gt; arba list&lt;Studentas&gt;) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Grupe</td><td>Studentų konteineris (perduodamas nuoroda - keičiamas vietoje)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Funkcija leidžia vartotojui interaktyviai pasirinkti rikiavimo kriterijų:</p><ul>
+<li>1: Pagal vardą/pavardę (abėcėlės tvarka)</li>
+<li>2: Pagal galutinį vidurkį (mažėjimo tvarka)</li>
+<li>3: Pagal galutinę medianą (mažėjimo tvarka)</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Funkcija automatiškai pasirenka tinkamą algoritmą:<ul>
+<li>std::sort() - vector (random access iterator)</li>
+<li>Container::sort() - list (bidirectional iterator)</li>
+</ul>
+</dd></dl>
+<p>Pavyzdys: </p><div class="fragment"><div class="line">vector&lt;Studentas&gt; grupe;</div>
+<div class="line"><span class="comment">// ... užpildyti grupę ...</span></div>
+<div class="line"><a class="code hl_function" href="#a20eaeb7bc4b9cdbf1785ee31b791e5b0">Rikiuoti</a>(grupe); <span class="comment">// Interaktyvus rikiavimas</span></div>
+<div class="ttc" id="arusiavimas_8h_html_a20eaeb7bc4b9cdbf1785ee31b791e5b0"><div class="ttname"><a href="#a20eaeb7bc4b9cdbf1785ee31b791e5b0">Rikiuoti</a></div><div class="ttdeci">void Rikiuoti(Container &amp;Grupe)</div><div class="ttdoc">Rikiuoja studentų konteinerį pagal pasirinktą kriterijų</div><div class="ttdef"><b>Definition</b> rusiavimas.h:51</div></div>
+</div><!-- fragment --><p>@complexity</p><ul>
+<li>Vector: O(n log n) - std::sort</li>
+<li>List: O(n log n) - list::sort </li>
+</ul>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -185,6 +233,31 @@ template&lt;typename Container&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Strategija 1: Pradinis skirstymas į du naujus konteinerius. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Container</td><td>Konteinerio tipas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">studentai</td><td>Pradinis studentų konteineris (nekeičiamas) </td></tr>
+    <tr><td class="paramname">vargsiukai</td><td>Išvesties konteineris vargšiukams </td></tr>
+    <tr><td class="paramname">kietiakai</td><td>Išvesties konteineris kietiakams </td></tr>
+    <tr><td class="paramname">kriterijus</td><td>Kriterijus skirstymui (1 - vidurkis, 2 - mediana)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Paprasčiausias metodas:</p><ul>
+<li>Pereina per visus studentus</li>
+<li>Kopijuoja į atitinkamą konteinerį pagal galutinį pažymį</li>
+<li>Pradinis konteineris lieka nepakeistas</li>
+</ul>
+<dl class="section warning"><dt>Warning</dt><dd>Naudoja daug atminties (3 konteineriai) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Šis metodas dažniausiai naudojamas kaip bazinė strategija</dd></dl>
+<p>@complexity O(n) iteravimas + O(n) kopijavimas </p>
+
 </div>
 </div>
 <a id="a8a31f3d5b3a0b27f4fb5ae823229932c" name="a8a31f3d5b3a0b27f4fb5ae823229932c"></a>
@@ -212,6 +285,37 @@ template&lt;typename Container&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Strategija 2: Klasikinis erase/remove metodas. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Container</td><td>Konteinerio tipas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">studentai</td><td>Pradinis studentų konteineris (bus pakeistas - lieka tik kietiakai) </td></tr>
+    <tr><td class="paramname">vargsiukai</td><td>Išvesties konteineris vargšiukams (bus užpildytas) </td></tr>
+    <tr><td class="paramname">kriterijus</td><td>Kriterijus skirstymui (1 - vidurkis, 2 - mediana)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Veikimo principas:</p><ol type="1">
+<li>Iteruoja per visus studentus</li>
+<li>Jei galutinis &lt; 5.0, kopijuoja į vargsiukai ir pažymi šalinimui</li>
+<li>Pašalina pažymėtus elementus iš pradinio konteinerio</li>
+</ol>
+<p><b>Vector atveju:</b></p><ul>
+<li>Naudoja std::remove_if idiomą</li>
+<li>Complexity: O(n) perkėlimas + O(n) erase</li>
+</ul>
+<p><b>List atveju:</b></p><ul>
+<li>Naudoja manual iteravimą su erase</li>
+<li>Complexity: O(n) su konstantiniu šalinimu</li>
+</ul>
+<dl class="section warning"><dt>Warning</dt><dd>Šis metodas sukuria kopijas elementų (push_back) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a8e96ce3e05eaabba2fe4de59e310365a" title="Strategija 3: Optimizuotas partition/splice metodas.">Strategija3</a> - optimizuotesnė alternatyva </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -245,7 +349,46 @@ template&lt;typename Container&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+
+<p>Strategija 3: Optimizuotas partition/splice metodas. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Container</td><td>Konteinerio tipas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">studentai</td><td>Pradinis studentų konteineris (bus pakeistas - lieka tik kietiakai) </td></tr>
+    <tr><td class="paramname">vargsiukai</td><td>Išvesties konteineris vargšiukams (bus užpildytas) </td></tr>
+    <tr><td class="paramname">kriterijus</td><td>Kriterijus skirstymui (1 - vidurkis, 2 - mediana)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Efektyviausias metodas!</b></p>
+<p>Veikimo principas:</p>
+<p><b>Vector atveju:</b></p><ol type="1">
+<li>Naudoja std::partition - perskirsto elementus vietoje</li>
+<li>Kietiakai lieka pradžioje, vargšiukai - gale</li>
+<li>std::move perkeliama vargšiukus į atskirą konteinerį</li>
+<li>Pašalina vargšiukų dalį iš pradinio vektoriaus</li>
+</ol>
+<p><b>List atveju:</b></p><ol type="1">
+<li>Naudoja list::splice - perkeliama mazgus be kopijavimo</li>
+<li>Vargšiukai tiesiog "atkabinami" ir prijungiami prie naujo sąrašo</li>
+<li>Nepereina per duomenis, tik keičia rodykles</li>
+</ol>
+<p>@complexity</p><ul>
+<li>Vector: O(n) partition + O(k) move (k - vargšiukų skaičius)</li>
+<li>List: O(n) iteration, bet tik rodyklių keitimas, ne kopijavimas</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Šis metodas yra <b>greitesnis</b> už Strategija2, ypač dideliems duomenų kiekiams</dd></dl>
+<p>Pavyzdys: </p><div class="fragment"><div class="line">vector&lt;Studentas&gt; studentai = {...};</div>
+<div class="line">vector&lt;Studentas&gt; vargsiukai;</div>
+<div class="line"><a class="code hl_function" href="#a8e96ce3e05eaabba2fe4de59e310365a">Strategija3</a>(studentai, vargsiukai, 1); <span class="comment">// Pagal vidurkį</span></div>
+<div class="line"><span class="comment">// Dabar: studentai turi tik &gt;= 5.0, vargsiukai turi &lt; 5.0</span></div>
+<div class="ttc" id="arusiavimas_8h_html_a8e96ce3e05eaabba2fe4de59e310365a"><div class="ttname"><a href="#a8e96ce3e05eaabba2fe4de59e310365a">Strategija3</a></div><div class="ttdeci">void Strategija3(Container &amp;studentai, Container &amp;vargsiukai, int kriterijus)</div><div class="ttdoc">Strategija 3: Optimizuotas partition/splice metodas.</div><div class="ttdef"><b>Definition</b> rusiavimas.h:184</div></div>
+</div><!-- fragment --> <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="rusiavimas_8h_a8e96ce3e05eaabba2fe4de59e310365a_icgraph.png" border="0" usemap="#arusiavimas_8h_a8e96ce3e05eaabba2fe4de59e310365a_icgraph" loading="lazy" alt=""/></div>
