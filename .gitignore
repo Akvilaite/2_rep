@@ -429,3 +429,65 @@ main/vargsiukai.txt
 /2 Strategija/vargsiukai.txt
 *.txt
 /2 Strategija/kietiakai.txt
+
+# Kompiliuoti failai
+*.o
+*.obj
+*.exe
+*.out
+programa
+programa_tests
+
+# Build katalogai
+build/
+cmake-build-*/
+bin/
+obj/
+
+# IDE specifiniai failai
+.vscode/
+.vs/
+.idea/
+*.swp
+*.swo
+*~
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# Rezultatų failai
+*.txt
+!CMakeLists.txt
+vargsiukai.txt
+kietiakai.txt
+stud*.txt
+
+# Dokumentacija (neįkelti į repo, bet galima pakeisti)
+doxygen/
+*.log
+
+# OS specifiniai
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary failai
+*.tmp
+*.bak
+*.cache
+
+# Google Test
+googletest/
+_deps/
+
+# CMake cache
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
