@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/programa_tests[1]_tests.cmake")
+  include("C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/programa_tests[1]_tests.cmake")
+else()
+  add_test(programa_tests_NOT_BUILT programa_tests_NOT_BUILT)
+endif()

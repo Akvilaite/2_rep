@@ -1,0 +1,92 @@
+{
+  "tests": 16,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "StudentasTest",
+      "tests": 16,
+      "testsuite": [
+        {
+          "name": "DefaultConstructor",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 29
+        },
+        {
+          "name": "SettersAndGetters",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 41
+        },
+        {
+          "name": "SetPazymiai",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 54
+        },
+        {
+          "name": "ComputeGalutinisVidurkis",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 66
+        },
+        {
+          "name": "ComputeGalutinisMedianaOdd",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 79
+        },
+        {
+          "name": "ComputeGalutinisMedianaEven",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 92
+        },
+        {
+          "name": "ComputeGalutinisBeND",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 105
+        },
+        {
+          "name": "CopyConstructor",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 119
+        },
+        {
+          "name": "AssignmentOperator",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 138
+        },
+        {
+          "name": "ComparisonOperatorLess",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 155
+        },
+        {
+          "name": "ComparisonOperatorSameSurname",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 169
+        },
+        {
+          "name": "EqualityOperator",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 182
+        },
+        {
+          "name": "ReadFromStream",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 198
+        },
+        {
+          "name": "BoundaryValues",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 212
+        },
+        {
+          "name": "VargsiukasClassification",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 235
+        },
+        {
+          "name": "KietiakasClassification",
+          "file": "C:\\Users\\akvil\\OneDrive\\Desktop\\koduxai\\objektinis\\1 uzduotis\\vo2\\git\\2_rep\\3 strategija\\test_studentas.cpp",
+          "line": 247
+        }
+      ]
+    }
+  ]
+}

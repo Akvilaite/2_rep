@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/51c158339e8628b64307bd18612cf6d2/googletest-populate.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/6a50095e267efaefc3bd9b950a7a38c3/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-subbuild/CMakeFiles/62dd2fb44349364be2db5988f5c32f30/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

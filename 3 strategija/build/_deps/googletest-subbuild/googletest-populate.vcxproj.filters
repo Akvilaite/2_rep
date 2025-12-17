@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\62dd2fb44349364be2db5988f5c32f30\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\6a50095e267efaefc3bd9b950a7a38c3\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\51c158339e8628b64307bd18612cf6d2\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{37956CC8-7184-3C21-8E9C-66A815BA388C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\akvil\OneDrive\Desktop\koduxai\objektinis\1 uzduotis\vo2\git\2_rep\3 strategija\build\CMakeFiles\a5f419a9bef7539033d1fd6bb0c6c21a\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0EBFE4A9-BCEF-3C42-B69A-E528683B67F4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

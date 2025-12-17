@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/cmake_install.cmake",
+		"C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-build/cmake_install.cmake",
+		"C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"C:/Users/akvil/OneDrive/Desktop/koduxai/objektinis/1 uzduotis/vo2/git/2_rep/3 strategija/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
