@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿//1.5
+#include <iostream>
 #include <vector>
 #include <list>
 #include <chrono>
@@ -87,7 +88,15 @@ int main() {
         return 0;
     }
 
-
+    // ========== IŠSAUGOME STUDENTĄ DEMONSTRACIJAI ==========
+    Studentas demonstracijosStudentas;
+    if (konteinerisTipas == 1 && !vGrupe.empty()) {
+        demonstracijosStudentas = vGrupe[0];
+    }
+    else if (konteinerisTipas == 2 && !lGrupe.empty()) {
+        demonstracijosStudentas = *lGrupe.begin();
+    }
+    // =======================================================
 
     int kriterijus;
     cout << "\nPasirinkite kriteriju studentu dalinimui:\n";
@@ -101,7 +110,7 @@ int main() {
 
     int strategija;
     cout << "\nPasirinkite strategija:\n";
-	cout << "1 - Pirma strategija \n";
+    cout << "1 - Pirma strategija \n";
     cout << "2 - Klasikine versija (erase/remove)\n";
     cout << "3 - Optimizuota versija (partition/splice)\n";
     while (!(cin >> strategija) || (strategija != 2 && strategija != 3 && strategija != 1)) {
@@ -145,9 +154,6 @@ int main() {
 
     double bendrasLaikas = failoLaikas + rusiavimoLaikas + isvedimoLaikas;
 
-
-
-
     cout << "\n===== LAIKO MATAVIMAI =====\n";
     cout << "Failo nuskaitymo laikas: " << failoLaikas << " s\n";
     cout << "Skirstymo i vargsiukus laikas: " << rusiavimoLaikas << " s\n";
@@ -159,66 +165,8 @@ int main() {
     cout << "\nRezultatai issaugoti i faila: vargsiukai.txt\n";
     if (budas == 4) cout << "Atnaujintas failas: " << fname << " (liko tik kietiakai)\n";
 
-    // ========== RULE OF THREE DEMONSTRACIJA (PABAIGOJE) ==========
-    cout << "\n";
-    cout << "========================================\n";
-    cout << "  RULE OF THREE DEMONSTRACIJA\n";
-    cout << "========================================\n\n";
-
-    if (konteinerisTipas == 1 && !vGrupe.empty()) {
-        cout << "1. Copy konstruktorius:\n";
-        Studentas kopija(vGrupe[0]);
-        cout << "   Sukurta kopija: " << kopija.var() << " " << kopija.pav() << "\n\n";
-
-        cout << "2. Assignment operatorius:\n";
-        Studentas kitas;
-        kitas = vGrupe[0];
-        cout << "   Priskirta: " << kitas.var() << " " << kitas.pav() << "\n\n";
-
-        cout << "3. Destruktorius:\n";
-        cout << "   Sukuriame laikina objekta...\n";
-        {
-            Studentas laikinas(vGrupe[0]);
-            cout << "   Laikinas: " << laikinas.var() << " " << laikinas.pav() << "\n";
-        }
-        cout << "   Laikinas objektas sunaikintas (destruktorius iskviestas)\n\n";
-
-    }
-    else if (konteinerisTipas == 2 && !lGrupe.empty()) {
-        cout << "1. Copy konstruktorius:\n";
-        Studentas kopija(*lGrupe.begin());
-        cout << "   Sukurta kopija: " << kopija.var() << " " << kopija.pav() << "\n\n";
-
-        cout << "2. Assignment operatorius:\n";
-        Studentas kitas;
-        kitas = *lGrupe.begin();
-        cout << "   Priskirta: " << kitas.var() << " " << kitas.pav() << "\n\n";
-
-        cout << "3. Destruktorius:\n";
-        cout << "   Sukuriame laikina objekta...\n";
-        {
-            Studentas laikinas(*lGrupe.begin());
-            cout << "   Laikinas: " << laikinas.var() << " " << laikinas.pav() << "\n";
-        }
-        cout << "   Laikinas objektas sunaikintas (destruktorius iskviestas)\n\n";
-    }
-
-    cout << "4. Operator<< (isvestis):\n";
-    if (konteinerisTipas == 1 && !vGrupe.empty()) {
-        cout << "   " << vGrupe[0] << "\n\n";
-    }
-    else if (konteinerisTipas == 2 && !lGrupe.empty()) {
-        cout << "   " << *lGrupe.begin() << "\n\n";
-    }
-
-    cout << "========================================\n";
-    cout << "  Visi Rule of Three metodai veikia!\n";
-    cout << "========================================\n";
-    // ========== DEMONSTRACIJA BAIGTA ==========
-
     return 0;
 }
-
 // ========================================
 //  Abstrakčios klasės Zmogus demonstracija
 // ========================================
